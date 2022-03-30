@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Андрей Озеев](https://up.htmlacademy.ru/adaptive/25/user/1438629).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Соколов](https://htmlacademy.ru/profile/k_sokolov).
 
 ---
 
