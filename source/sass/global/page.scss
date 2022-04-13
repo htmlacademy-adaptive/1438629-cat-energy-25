@@ -1,8 +1,13 @@
 .page {
   margin: 0;
   padding: 0;
-  &__body {
-    margin: 0;
+  height: 100%;
+
+    &__body {
+    font-family: "Oswald";
     padding: 0;
-  }
+    margin: 0 auto;
+    width: 320px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    }
 }
