@@ -1,1 +1,10 @@
-// Начните писать стили здесь
+// Общие стили
+@use "./global/fonts.scss";
+@use "./global/page.scss";
+@use "./global/visually-hidden.scss";
+//Блоки
+@use "./blocks/main-nav.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/logo.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/button.scss";
