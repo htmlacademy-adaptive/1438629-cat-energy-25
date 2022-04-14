@@ -1,0 +1,30 @@
+.location__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+}
+
+.location__title {
+  margin: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  max-width: 139px;
+}
+
+.location__adress {
+  margin: 0;
+  font-family: $arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $special_dark-grey;
+  font-style: normal;
+  max-width: 139px;
+}
+
+.location__map {
+  display: block;
+}

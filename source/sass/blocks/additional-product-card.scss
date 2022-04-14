@@ -1,0 +1,25 @@
+.additional-product-card__title {
+  margin: 13px 0;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.additional-product-card__sublist {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0;
+}
+
+.additional-product-card__sublist-title {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-product-card__sublist-descrption {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+}

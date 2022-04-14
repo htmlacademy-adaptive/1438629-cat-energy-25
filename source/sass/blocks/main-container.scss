@@ -1,0 +1,26 @@
+.main-container__title {
+  margin: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 20px 41px;
+  border-top: 1px solid $special_grey;
+}
+
+.main-container__products {
+  padding-bottom: 25px;
+}
+
+.main-container__gift {
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+.main-container__location {
+  background-color: $basic_grey;
+}
+
+.main-container__program-selection {
+  padding: 0 20px;
+}

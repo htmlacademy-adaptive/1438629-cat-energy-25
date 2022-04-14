@@ -1,0 +1,28 @@
+.questionnaire {
+  font-family: $oswald;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.questionnaire__description {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding-bottom: 39px;
+}
+
+.questionnaire__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.questionnaire__form {
+  box-sizing: border-box;
+  margin-left: 12px;
+}
