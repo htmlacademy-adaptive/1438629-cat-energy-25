@@ -1,7 +1,6 @@
-.questionnaire {
+.feedback {
   font-family: $oswald;
   font-weight: 400;
-  text-transform: uppercase;
   border: 0;
   margin: 0;
   padding: 0;
@@ -9,14 +8,15 @@
   flex-direction: column;
 }
 
-.questionnaire__description {
-  font-size: 14px;
-  line-height: 18px;
-  margin: 0;
-  padding-bottom: 39px;
+.feedback__legend {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 26px;
+  margin-top: 26px;
+  margin-bottom: 35px;
 }
 
-.questionnaire__label {
+.feedback__label {
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
@@ -24,9 +24,10 @@
   align-items: center;
   margin-bottom: 14px;
   color: $special_dark-grey;
+  text-transform: uppercase;
 }
 
-.questionnaire__form {
+.feedback__input {
   box-sizing: border-box;
   margin-left: 12px;
   flex-grow: 1;
@@ -38,15 +39,5 @@
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
-}
-
-.questionnaire__form::-webkit-outer-spin-button,
-.questionnaire__form::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.questionnaire__form {
-  -webkit-appearance: none;
-  appearance: none;
-  -moz-appearance: textfield;
+  text-transform: uppercase;
 }
