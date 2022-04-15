@@ -7,6 +7,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+
   &__list {
     list-style-type: none;
     font-family: $oswald;
@@ -18,6 +19,7 @@
     margin-bottom: 0;
     border-bottom: 1px solid rgba(217, 217, 217, 1);
   }
+
   &__item {
     margin-bottom: 24px;
   }
