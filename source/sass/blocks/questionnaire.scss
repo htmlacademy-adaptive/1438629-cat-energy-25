@@ -38,14 +38,3 @@
   line-height: 18px;
   color: $special_dark-grey;
 }
-
-.questionnaire__form::-webkit-outer-spin-button,
-.questionnaire__form::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.questionnaire__form {
-  -webkit-appearance: none;
-  appearance: none;
-  -moz-appearance: textfield;
-}
