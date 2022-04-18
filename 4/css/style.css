@@ -598,17 +598,6 @@
   color: #444444;
 }
 
-.questionnaire__form::-webkit-outer-spin-button,
-.questionnaire__form::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.questionnaire__form {
-  -webkit-appearance: none;
-  appearance: none;
-  -moz-appearance: textfield;
-}
-
 .program-selection__questionnaire {
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 10px;
@@ -675,7 +664,6 @@
 .feedback__label {
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
   display: flex;
   align-items: center;
   margin-bottom: 14px;
@@ -690,7 +678,7 @@
   padding-top: 9px;
   padding-bottom: 10px;
   padding-left: 16px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
