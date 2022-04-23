@@ -1,5 +1,5 @@
 .mission {
-  font-family: $oswald;
+  font-family: $main_font;
   font-weight: 400;
   text-transform: uppercase;
   border: 0;
@@ -10,8 +10,8 @@
 
   &__list {
     list-style-type: none;
-    font-family: $oswald;
-    color: $special_dark-grey-2;
+    font-family: $main_font;
+    color: $color_special_dark_grey_2;
     font-size: 16px;
     padding: 0;
     line-height: 18px;

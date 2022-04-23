@@ -1,0 +1,16 @@
+.title {
+  font-family: $main_font;
+  font-weight: 400;
+
+  &--big {
+    font-size: 36px;
+  }
+
+  &--medium {
+    font-size: 26px;
+  }
+
+  &--small {
+    font-size: 16px;
+  }
+}

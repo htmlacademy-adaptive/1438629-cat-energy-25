@@ -1,7 +1,7 @@
 .promo {
   position: relative;
   color: rgba(255, 255, 255, 1);
-  font-family: $oswald;
+  font-family: $main_font;
 
   &::before {
     content: "";
@@ -42,9 +42,6 @@
   padding-top: 27px;
   padding-bottom: 25px;
   text-align: center;
-  line-height: 36px;
-  font-size: 36px;
-  font-weight: 400;
 }
 
 .promo__description {

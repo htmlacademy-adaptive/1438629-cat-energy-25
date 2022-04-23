@@ -2,12 +2,10 @@
   margin: 0;
   padding: 0 20px;
   margin-top: 25px;
-  font-family: $oswald;
-  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   padding-bottom: 36px;
-  border-bottom: 1px solid $special_grey;
+  border-bottom: 1px solid $color_special_grey;
 }
 
 .additional-products__list {
@@ -18,5 +16,5 @@
 
 .additional-products__item {
   padding-bottom: 20px;
-  border-bottom: 1px solid $special_grey;
+  border-bottom: 1px solid $color_special_grey;
 }

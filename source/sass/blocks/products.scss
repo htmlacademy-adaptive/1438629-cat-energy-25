@@ -12,18 +12,21 @@
 .products__showmore {
   padding: 0 20px;
   padding-bottom: 25px;
-  border-bottom: 1px solid $basic_grey;
+  border-bottom: 1px solid $color_basic_grey;
 }
 
 .products__description {
   margin: 0;
   margin-top: 8px;
   margin-bottom: 21px;
-  color: $special_dark-grey;
+  color: $color_special_dark_grey;
   text-align: center;
 }
 
 .products__button-showmore {
-  background-color: $basic_grey;
-  color: $special_dark-grey;
+  background-color: $color_basic_grey;
+  color: $color_special_dark_grey;
+}
+.products__title {
+  text-align: center;
 }

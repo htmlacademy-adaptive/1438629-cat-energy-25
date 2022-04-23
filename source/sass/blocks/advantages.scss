@@ -4,9 +4,6 @@
 
   &__title {
     margin: 0;
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 36px;
     line-height: 40px;
     margin-bottom: 42px;
   }
@@ -20,7 +17,7 @@
   &__item {
     font-size: 14px;
     line-height: 18px;
-    color: $special_dark-grey;
+    color: $color_special_dark_grey;
     padding-bottom: 26px;
     padding-left: 80px;
   }

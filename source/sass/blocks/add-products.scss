@@ -4,7 +4,6 @@
   margin: 0;
 
   &__title {
-    font-family: $oswald;
     font-size: 24px;
     line-height: 26px;
     margin-top: 22px;
@@ -15,12 +14,12 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-family: $oswald;
+    font-family: $main_font;
     font-size: 16px;
     line-height: 18px;
   }
 
   &__item {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 }
