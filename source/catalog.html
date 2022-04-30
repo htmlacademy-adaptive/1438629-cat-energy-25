@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
 
   <title>Каталог: Кэт энерджи</title>
@@ -10,14 +11,16 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-link logo" href="#">
-      <img class="main-header__logo-image" src="./img/logo-mobile.png" width="33" height="38" alt="Кот супер-герой.">
-    </a>
-    <a href="" class="main-header__logo-link logo logo-text">
-      <img class="main-header__logo-image-text logo-text" src="./img/logo-2-text.png" width="101" height="18"
-        alt="Питание Кэт энерджи.">
-    </a>
-    <nav class="main-nav">
+    <div class="main-header__container-logo">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="./img/logo-mobile.png" width="33" height="38" alt="Кот супер-герой.">
+      </a>
+      <a href="" class="main-header__logo logo-text">
+        <img class="main-header__logo-image-text logo-text" src="./img/logo-2-text.png" width="101" height="18"
+          alt="Питание Кэт энерджи.">
+      </a>
+    </div>
+    <nav class="main-header__main-nav main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -45,16 +48,16 @@
             height="86" alt="Корм из куры малая пачка.">
           <dl class="product-card__list">
             <div class="product-card__item">
-              <dt class="product-card__category">Масса</dt>
-              <dd class="product-card__details">500г</dd>
+              <dt class="product-card__subitem">Масса</dt>
+              <dd class="product-card__subitem">500г</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Вкус</dt>
-              <dd class="product-card__details">Курица</dd>
+              <dt class="product-card__subitem">Вкус</dt>
+              <dd class="product-card__subitem">Курица</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Цена</dt>
-              <dd class="product-card__details">700 Р.</dd>
+              <dt class="product-card__subitem">Цена</dt>
+              <dd class="product-card__subitem">700 Р.</dd>
             </div>
           </dl>
           <a class="product-card__button button" href="#">Заказать</a>
@@ -65,16 +68,16 @@
             height="101" alt="Корм из куры большая пачка.">
           <dl class="product-card__list">
             <div class="product-card__item">
-              <dt class="product-card__category">Масса</dt>
-              <dd class="product-card__details">1000г</dd>
+              <dt class="product-card__subitem">Масса</dt>
+              <dd class="product-card__subitem">1000г</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Вкус</dt>
-              <dd class="product-card__details">Курица</dd>
+              <dt class="product-card__subitem">Вкус</dt>
+              <dd class="product-card__subitem">Курица</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Цена</dt>
-              <dd class="product-card__details">1000 Р.</dd>
+              <dt class="product-card__subitem">Цена</dt>
+              <dd class="product-card__subitem">1000 Р.</dd>
             </div>
           </dl>
           <a class="product-card__button button" href="#">Заказать</a>
@@ -85,16 +88,16 @@
             alt="Корм из рыбы малая пачка.">
           <dl class="product-card__list">
             <div class="product-card__item">
-              <dt class="product-card__category">Масса</dt>
-              <dd class="product-card__details">500г</dd>
+              <dt class="product-card__subitem">Масса</dt>
+              <dd class="product-card__subitem">500г</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Вкус</dt>
-              <dd class="product-card__details">Рыба</dd>
+              <dt class="product-card__subitem">Вкус</dt>
+              <dd class="product-card__subitem">Рыба</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Цена</dt>
-              <dd class="product-card__details">700 Р.</dd>
+              <dt class="product-card__subitem">Цена</dt>
+              <dd class="product-card__subitem">700 Р.</dd>
             </div>
           </dl>
           <a class="product-card__button button" href="#">Заказать</a>
@@ -105,16 +108,16 @@
             alt="Корм из рыбы большая пачка.">
           <dl class="product-card__list">
             <div class="product-card__item">
-              <dt class="product-card__category">Масса</dt>
-              <dd class="product-card__details">1000г</dd>
+              <dt class="product-card__subitem">Масса</dt>
+              <dd class="product-card__subitem">1000г</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Вкус</dt>
-              <dd class="product-card__details">Рыба</dd>
+              <dt class="product-card__subitem">Вкус</dt>
+              <dd class="product-card__subitem">Рыба</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Цена</dt>
-              <dd class="product-card__details">1000 Р.</dd>
+              <dt class="product-card__subitem">Цена</dt>
+              <dd class="product-card__subitem">1000 Р.</dd>
             </div>
           </dl>
           <a class="product-card__button button" href="#">Заказать</a>
@@ -125,16 +128,16 @@
             height="100" alt="Корм из гречки малая пачка.">
           <dl class="product-card__list">
             <div class="product-card__item">
-              <dt class="product-card__category">Масса</dt>
-              <dd class="product-card__details">500г</dd>
+              <dt class="product-card__subitem">Масса</dt>
+              <dd class="product-card__subitem">500г</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Вкус</dt>
-              <dd class="product-card__details">Гречка</dd>
+              <dt class="product-card__subitem">Вкус</dt>
+              <dd class="product-card__subitem">Гречка</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Цена</dt>
-              <dd class="product-card__details">400 Р.</dd>
+              <dt class="product-card__subitem">Цена</dt>
+              <dd class="product-card__subitem">400 Р.</dd>
             </div>
           </dl>
           <a class="product-card__button button" href="#">Заказать</a>
@@ -145,16 +148,16 @@
             height="100" alt="Корм из гречки большая пачка.">
           <dl class="product-card__list">
             <div class="product-card__item">
-              <dt class="product-card__category">Масса</dt>
-              <dd class="product-card__details">1000г</dd>
+              <dt class="product-card__subitem">Масса</dt>
+              <dd class="product-card__subitem">1000г</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Вкус</dt>
-              <dd class="product-card__details">Гречка</dd>
+              <dt class="product-card__subitem">Вкус</dt>
+              <dd class="product-card__subitem">Гречка</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Цена</dt>
-              <dd class="product-card__details">700 Р.</dd>
+              <dt class="product-card__subitem">Цена</dt>
+              <dd class="product-card__subitem">700 Р.</dd>
             </div>
           </dl>
           <a class="product-card__button button" href="#">Заказать</a>
@@ -165,16 +168,16 @@
             height="100" alt="Корм из риса малая пачка.">
           <dl class="product-card__list">
             <div class="product-card__item">
-              <dt class="product-card__category">Масса</dt>
-              <dd class="product-card__details">500г</dd>
+              <dt class="product-card__subitem">Масса</dt>
+              <dd class="product-card__subitem">500г</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Вкус</dt>
-              <dd class="product-card__details">Рис</dd>
+              <dt class="product-card__subitem">Вкус</dt>
+              <dd class="product-card__subitem">Рис</dd>
             </div>
             <div class="product-card__item">
-              <dt class="product-card__category">Цена</dt>
-              <dd class="product-card__details">500 Р.</dd>
+              <dt class="product-card__subitem">Цена</dt>
+              <dd class="product-card__subitem">500 Р.</dd>
             </div>
           </dl>
           <a class="product-card__button button" href="#">Заказать</a>
@@ -185,43 +188,42 @@
         <p class="products__description">На самом деле вкусов гораздо больше!</p>
         <a class="products__button-showmore button" href="#">Показать все</a>
       </div>
-    </section>
-    <section class="main-container__additional-products additional-products">
-      <h2 class="additional-products__title title">Дополнительные товары</h2>
-      <ul class="additional-products__list">
-        <li class="additional-products__item additional-product-card">
-          <h3 class="additional-product-card__title title">Сахарозаменитель</h3>
-          <dl class="additional-product-card__sublist">
-            <dt class="additional-product-card__sublist-title title">1 упаковка (100 г)</dt>
-            <dd class="additional-product-card__sublist-descrption">200 Р.</dd>
+      <!-- Дополнительные товары -->
+      <h2 class="products__title title">Дополнительные товары</h2>
+      <ul class="products__list">
+        <li class="products__item product-card product-card--small">
+          <h3 class="product-card__title title">Сахарозаменитель</h3>
+          <dl class="product-card__sublist-item">
+            <dt class="product-card__sublist-item">1 упаковка (100 г)</dt>
+            <dd class="product-card__sublist-item">200 Р.</dd>
           </dl>
-          <a class="additional-product-card__button button" href="#">Заказать</a>
+          <a class="product-card__button button" href="#">Заказать</a>
         </li>
-        <li class="additional-products__item additional-product-card">
-          <h3 class="additional-product-card__title title">питьевая вода</h3>
-          <dl class="additional-product-card__sublist">
-            <dt class="additional-product-card__sublist-title title">5 литров</dt>
-            <dd class="additional-product-card__sublist-descrption">50 Р.</dd>
+        <li class="products__item product-card product-card--small">
+          <h3 class="product-card__title title">питьевая вода</h3>
+          <dl class="product-card__sublist">
+            <dt class="product-card__sublist-item">5 литров</dt>
+            <dd class="product-card__sublist-item">50 Р.</dd>
           </dl>
-          <a class="additional-product-card__button button" href="#">Заказать</a>
+          <a class="product-card__button button" href="#">Заказать</a>
 
         </li>
-        <li class="additional-products__item additional-product-card">
-          <h3 class="additional-product-card__title title">молоко</h3>
-          <dl class="additional-product-card__sublist">
-            <dt class="additional-product-card__sublist-title title">1 литр</dt>
-            <dd class="additional-product-card__sublist-descrption">100 Р.</dd>
+        <li class="products__item product-card product-card--small">
+          <h3 class="product-card__title title">молоко</h3>
+          <dl class="product-card__sublist">
+            <dt class="product-card__sublist-item">1 литр</dt>
+            <dd class="product-card__sublist-item">100 Р.</dd>
           </dl>
-          <a class="additional-product-card__button button" href="#">Заказать</a>
+          <a class="product-card__button button" href="#">Заказать</a>
 
         </li>
-        <li class="additional-products__item additional-product-card">
-          <h3 class="additional-product-card__title title">витамины</h3>
-          <dl class="additional-product-card__sublist">
-            <dt class="additional-product-card__sublist-title title">1 упаковка (30 г)</dt>
-            <dd class="additional-product-card__sublist-descrption">300 Р.</dd>
+        <li class="products__item product-card product-card--small">
+          <h3 class="product-card__title title">витамины</h3>
+          <dl class="product-card__sublist">
+            <dt class="product-card__sublist-item">1 упаковка (30 г)</dt>
+            <dd class="product-card__sublist-item">300 Р.</dd>
           </dl>
-          <a class="additional-product-card__button button" href="#">Заказать</a>
+          <a class="product-card__button button" href="#">Заказать</a>
         </li>
       </ul>
     </section>

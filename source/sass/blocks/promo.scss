@@ -60,3 +60,15 @@
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo{
+    color: #000000;
+    &::before{
+      display: none;
+    }
+    &::after{
+      display: none;
+    }
+  }
+}

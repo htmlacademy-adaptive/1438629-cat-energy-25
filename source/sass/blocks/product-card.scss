@@ -11,17 +11,28 @@
 .product-card__title {
   font-family: $main_font;
   font-weight: 400;
+  color: $color_special_dark_grey_2;
   font-size: 16px;
   line-height: 20px;
-  margin-top: 20px;
+  margin-top: 19px;
   margin-bottom: 14px;
   text-transform: uppercase;
 }
 
-.product-card__details {
+.product-card__subitem {
   margin: 0;
 }
 
 .product-card__button {
   margin-bottom: 20px;
+}
+.product-card__sublist-item {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color_special_dark_grey;
+}
+.product-card--small .product-card__title {
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
