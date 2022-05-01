@@ -4,6 +4,7 @@
 
   &--big {
     font-size: 36px;
+    line-height: 36px;
   }
 
   &--medium {
@@ -12,5 +13,12 @@
 
   &--small {
     font-size: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title--big {
+    font-size: 60px;
+    line-height: 60px;
   }
 }

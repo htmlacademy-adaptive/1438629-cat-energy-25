@@ -22,3 +22,20 @@
     padding-left: 80px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    column-gap: 150px;
+    row-gap: 70px;
+  }
+
+  .advantages__item {
+    padding: 0;
+    max-width: 250px;
+    min-height: 280px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
