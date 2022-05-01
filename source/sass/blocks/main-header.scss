@@ -13,10 +13,10 @@
 
 .main-header__logo {
   display: block;
+}
 
-  &__image {
-    display: block;
-  }
+.main-header__image {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {

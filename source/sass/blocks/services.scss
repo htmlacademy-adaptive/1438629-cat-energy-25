@@ -1,16 +1,16 @@
 .services {
   margin: 0 20px;
+}
 
-  &__wrapper {
-    background-color: $color_basic_grey;
-    margin-bottom: 20px;
-  }
+.services__wrapper {
+  background-color: $color_basic_grey;
+  margin-bottom: 20px;
+}
 
-  &__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+.services__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .services__title {

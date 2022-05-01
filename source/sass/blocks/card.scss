@@ -1,14 +1,14 @@
-.product-card {
+.card {
   font-family: $second_font;
   font-size: 12px;
   line-height: 16px;
-
-  &__list {
-    margin-bottom: 22px;
-  }
 }
 
-.product-card__title {
+.card__list {
+  margin-bottom: 22px;
+}
+
+.card__title {
   font-family: $main_font;
   font-weight: 400;
   color: $color_special_dark_grey_2;
@@ -19,22 +19,22 @@
   text-transform: uppercase;
 }
 
-.product-card__subitem {
+.card dd {
   margin: 0;
 }
 
-.product-card__button {
+.card__button {
   margin-bottom: 20px;
 }
 
-.product-card__sublist-item {
+.card__sublist-item {
   margin: 0;
   font-size: 14px;
   line-height: 14px;
   color: $color_special_dark_grey;
 }
 
-.product-card--small .product-card__title {
+.card--small .card__title {
   margin-top: 13px;
   margin-bottom: 13px;
 }

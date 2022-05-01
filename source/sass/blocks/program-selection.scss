@@ -1,50 +1,49 @@
 .program-selection {
-
   margin: 0;
+}
 
-  &__checkbox {
-    border: 0;
-    padding: 0;
-  }
+.program-selection__checkbox {
+  border: 0;
+  padding: 0;
+}
 
-  &__title {
-    font-size: 24px;
-    line-height: 26px;
-    margin-top: 22px;
-    margin-bottom: 39px;
-  }
+.program-selection__title {
+  font-size: 24px;
+  line-height: 26px;
+  margin-top: 22px;
+  margin-bottom: 39px;
+}
 
-  &__list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-family: $main_font;
-    font-size: 16px;
-    line-height: 18px;
-  }
+.program-selection__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: $main_font;
+  font-size: 16px;
+  line-height: 18px;
+}
 
-  &__item {
-    margin-bottom: 24px;
-  }
+.program-selection__item {
+  margin-bottom: 24px;
+}
 
-  &__radio {
-    font-family: $main_font;
-    font-weight: 400;
-    text-transform: uppercase;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+.program-selection__radio {
+  font-family: $main_font;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-    &__list {
-      color: $color_special_dark_grey_2;
-      padding: 0;
-      margin-top: 28px;
-      margin-bottom: 0;
-      border-bottom: 1px solid rgba(217, 217, 217, 1);
-    }
-  }
+.program-selection .program-election__list {
+  color: $color_special_dark_grey_2;
+  padding: 0;
+  margin-top: 28px;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
 }
 
 .program-selection__questionnaire {

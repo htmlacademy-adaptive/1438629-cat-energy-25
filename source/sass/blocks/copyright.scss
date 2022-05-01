@@ -6,10 +6,9 @@
   padding-bottom: 22px;
   font-size: 16px;
   line-height: 18px;
+}
 
-
-  &__text-link {
-    color: $color_special_dark_grey;
-    text-decoration: none;
-  }
+.copyright__text-link {
+  color: $color_special_dark_grey;
+  text-decoration: none;
 }
