@@ -21,6 +21,7 @@
 .presentation__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -32,6 +33,11 @@
   box-sizing: border-box;
   min-width: 124px;
   padding: 10px;
+
+  &--modified {
+    border: 0;
+    margin: 0 auto;
+  }
 }
 
 .presentation__item-value {
@@ -70,4 +76,25 @@
 
 .presentation__slider {
   padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation__title {
+    line-height: 60px;
+  }
+
+  .presentation__list {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    column-gap: 42px;
+  }
+
+  .presentation__item {
+    min-width: 162px;
+  }
+
+  .presentation__slider {
+    display: flex;
+    flex-direction: column;
+  }
 }
