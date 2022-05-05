@@ -16,3 +16,14 @@
   padding: 23px 35px;
   border-bottom: 1px solid rgba(217, 217, 217, 1);
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 147px;
+  }
+}

@@ -25,3 +25,21 @@
 .location__map {
   display: block;
 }
+@media (min-width: $tablet-width) {
+  .location__wrapper {
+    padding: 56px 70px;
+  }
+  .location__title {
+    font-size: 20px;
+    line-height: 26px;
+    min-width: 172px;
+  }
+  .location__adress {
+    max-width: 160px;
+    text-align: right;
+  }
+  .location__map {
+    width: 100%;
+    min-height: 400px;
+  }
+}
