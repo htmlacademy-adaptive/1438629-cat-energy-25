@@ -70,8 +70,6 @@
   line-height: 24px;
   margin: 8px;
   order: -1;
-  font-size: 24px;
-  line-height: 24px;
 }
 
 .presentation__item-description {
@@ -109,6 +107,7 @@
 
   .presentation__item {
     min-width: 162px;
+
     &::before {
       min-width: 162px;
       top: -5px;
@@ -117,6 +116,7 @@
       right: 0;
     }
   }
+
   .presentation__item-modified {
     grid-column: 3/4;
     justify-self: end;
@@ -124,6 +124,7 @@
     flex-direction: column;
     padding-top: 10px;
   }
+
   .presentation__item-modified dd {
     align-self: flex-end;
   }
