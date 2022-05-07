@@ -4,6 +4,9 @@
 }
 
 .presentation__title {
+  font-family: $main_font;
+  font-weight: 400;
+  font-size: 36px;
   margin: 0;
   line-height: 40px;
   padding-top: 25px;
@@ -89,6 +92,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .presentation {
+    padding: 0 30px;
+  }
+
   .presentation__title {
     line-height: 60px;
   }
@@ -146,5 +153,49 @@
   .presentation__slider {
     display: flex;
     flex-direction: column;
+  }
+}
+
+// Desktop styles
+@media (min-width: $desktop-width) {
+  .presentation {
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 591px;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 193px;
+    row-gap: 70px;
+  }
+
+  .presentation__title {
+    grid-column: 1/2;
+    margin-top: 0;
+    margin-bottom: 76px;
+  }
+
+  .presentation__description {
+    grid-column: 1/2;
+    margin: 0;
+  }
+
+  .presentation__list {
+    grid-template-columns: auto auto;
+    grid-column: 1/2;
+    margin: 0;
+    margin-bottom: 75px;
+  }
+
+  .presentation__slider {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    align-self: center;
+    min-height: auto;
+    justify-self: center;
+  }
+
+  .presentation__item-modified {
+    grid-column: -1/1;
+    justify-self: center;
+    flex-direction: row;
   }
 }

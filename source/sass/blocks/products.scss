@@ -1,3 +1,7 @@
+.products {
+  padding: 0 20px;
+}
+
 .products__list {
   list-style-type: none;
   margin: 0;
@@ -6,13 +10,6 @@
 
 .products__item {
   border-top: 1px solid rgba(235, 235, 235, 1);
-  padding: 0 20px;
-}
-
-.products__showmore {
-  padding: 0 20px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid $color_basic_grey;
 }
 
 .products__description {
@@ -29,5 +26,10 @@
 }
 
 .products__title {
-  text-align: center;
+  font-family: $main_font;
+  font-weight: 400;
+  text-align: left;
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 20px;
 }

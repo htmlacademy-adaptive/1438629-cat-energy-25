@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0 30px;
+  padding: 10px 20px 18px;
 }
 
 .main-header__container-logo {
@@ -23,6 +23,8 @@
   .main-header {
     flex-direction: row;
     align-items: center;
+    min-height: 100px;
+    padding: 0 30px;
   }
 
   .main-header__container-logo {
@@ -32,5 +34,12 @@
   .main-header__main-nav {
     min-width: 440px;
     margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    max-width: 1440px;
+    padding: 0 110px;
   }
 }

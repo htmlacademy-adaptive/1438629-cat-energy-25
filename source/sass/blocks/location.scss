@@ -5,6 +5,9 @@
 }
 
 .location__title {
+  font-family: $main_font;
+  font-weight: 400;
+  font-size: 16px;
   margin: 0;
   line-height: 20px;
   text-transform: uppercase;
@@ -24,6 +27,8 @@
 
 .location__map {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,5 +50,29 @@
   .location__map {
     width: 100%;
     min-height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    display: grid;
+    grid-template-columns: 1fr 565px 655px 1fr;
+    grid-template-rows: 95px 200px 107px;
+  }
+
+  .location__wrapper {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    z-index: 1;
+    background-color: #ffffff;
+  }
+
+  .location__adress {
+    text-align: left;
+  }
+
+  .location__map {
+    grid-column: -1/1;
+    grid-row: -1/1;
   }
 }

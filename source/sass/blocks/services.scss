@@ -1,5 +1,5 @@
 .services {
-  margin: 0 20px;
+  padding: 0 20px;
 }
 
 .services__wrapper {
@@ -14,16 +14,19 @@
 }
 
 .services__title {
+  font-family: $main_font;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 27px;
   position: relative;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  line-height: 37px;
 }
 
 .services__description {
-  margin: 0 20px;
   font-size: 14px;
   line-height: 18px;
   color: $color_special_dark_grey;
@@ -40,13 +43,16 @@
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 10px;
-  margin-left: 20px;
   padding-top: 9px;
   padding-bottom: 22px;
   max-width: 132px;
 }
 
 @media (min-width: $tablet-width) {
+  .services {
+    padding: 0 30px;
+  }
+
   .services__item {
     display: grid;
     grid-template-columns: 340px 1fr;
@@ -75,5 +81,17 @@
     grid-column: 1/2;
     grid-row: 3/4;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services {
+    padding: 0 110px;
+  }
+
+  .services__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

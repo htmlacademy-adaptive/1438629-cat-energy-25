@@ -2,6 +2,13 @@
   font-family: $second_font;
   font-size: 12px;
   line-height: 16px;
+
+  &--showmore {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
 }
 
 .card__list {
@@ -25,6 +32,12 @@
 
 .card__button {
   margin-bottom: 20px;
+}
+
+.card__sublist {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .card__sublist-item {
