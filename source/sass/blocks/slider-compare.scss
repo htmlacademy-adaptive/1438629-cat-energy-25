@@ -1,0 +1,27 @@
+.slider-compare__before-image {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.slider-compare__after-image {
+  display: none;
+  margin-bottom: 15px;
+}
+
+.slider-compare__range-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-compare__button-range {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: $main_font;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  background-color: transparent;
+  cursor: pointer;
+}

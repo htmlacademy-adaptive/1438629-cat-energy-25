@@ -1,0 +1,29 @@
+.main-footer {
+  background-color: $color_basic_grey;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__logo-link {
+  display: block;
+  margin-top: 9px;
+  padding: 30px 76px 32px;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+
+.main-footer__social {
+  padding: 23px 35px;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    padding: 0 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 147px;
+  }
+}

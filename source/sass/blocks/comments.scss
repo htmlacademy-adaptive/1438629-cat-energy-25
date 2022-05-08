@@ -1,0 +1,24 @@
+.comments {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: $main_font;
+
+  &__label {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.comments__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  padding-top: 9px;
+  padding-left: 15px;
+  margin: 0;
+  margin-top: 34px;
+  font-family: $main_font;
+  box-sizing: border-box;
+}

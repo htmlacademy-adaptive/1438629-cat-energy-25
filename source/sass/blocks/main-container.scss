@@ -1,0 +1,26 @@
+.main-container__title {
+  font-family: $main_font;
+  font-weight: 400;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 20px 41px;
+  border-top: 1px solid $color_special_grey;
+}
+
+.main-container__products {
+  padding-bottom: 25px;
+}
+
+.main-container__gift {
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+.main-container__location {
+  background-color: $color_basic_grey;
+}
+
+.main-container__program-selection {
+  padding: 0 20px;
+}

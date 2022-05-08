@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-family: $main_font;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: $color_basic_green;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  padding: 7px 44px;
+}
