@@ -29,3 +29,11 @@
   line-height: 24px;
   padding-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 324px);
+    grid-gap: 60px;
+  }
+}
