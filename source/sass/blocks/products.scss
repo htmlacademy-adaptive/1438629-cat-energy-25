@@ -31,9 +31,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .products {
+    padding: 0 30px;
+  }
+
+  .products__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   .products__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 324px);
     grid-gap: 60px;
+
+    &--small {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 0;
+    }
   }
 }
