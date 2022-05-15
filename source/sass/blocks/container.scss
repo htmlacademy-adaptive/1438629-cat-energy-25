@@ -13,9 +13,11 @@
     box-sizing: border-box;
   }
 }
+
 @media (min-width: $desktop-width) {
   .container {
     width: 1440px;
     padding: 0 110px;
+    background: linear-gradient(to left, #68b738 0, #68b738 0 720px, #ffffff 0);
   }
 }

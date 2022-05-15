@@ -34,21 +34,39 @@
     line-height: 24px;
     font-weight: 400;
   }
+
   .site-navigation__item {
     width: auto;
     border: 0;
+
     &:last-child {
       border: 0;
     }
+
+    &--current {
+      border-bottom: 2px solid $color_basic_green;
+    }
   }
+
   .site-navigation__link {
     padding: 8px 5px;
     width: auto;
     line-height: 24px;
   }
 }
-@media (min-width: $tablet-width) {
+
+@media (min-width: $desktop-width) {
   .site-navigation {
+    min-width: 478px;
+  }
+
+  .site-navigation__item--current {
+    border-bottom: 2px solid $color_white;
+  }
+
+  .site-navigation__link {
+    font-size: 20px;
     line-height: 30px;
+    color: $color_white;
   }
 }
