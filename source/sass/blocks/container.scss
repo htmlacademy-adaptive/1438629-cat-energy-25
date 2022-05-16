@@ -18,6 +18,9 @@
   .container {
     width: 1440px;
     padding: 0 110px;
-    background: linear-gradient(to left, #68b738 0, #68b738 0 720px, #ffffff 0);
+
+    &--bgcolor {
+      background: linear-gradient(to left, #68b738 0, #68b738 0 720px, #ffffff 0);
+    }
   }
 }
