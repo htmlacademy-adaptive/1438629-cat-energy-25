@@ -41,20 +41,33 @@
       </nav>
     </div>
   </header>
-  <main class="main-container">
-    <section class="promo">
-      <h1 class="promo__title">Функциональное
-        питание для котов</h1>
-      <p class="promo__description">Занялся собой? Займись котом!</p>
-      <div class="promo__wrapper">
-        <img class="promo__product-image" src="./img/index-presentation-product.png" width="280" height="270"
-          alt="Корм из курицы Кэт энерджи.">
-        <a class="promo__button button" href="#">
-          Подобрать программу
-        </a>
+  <main class="page__main main-index">
+    <section class="main-index__promo promo">
+      <div class="promo__container container">
+        <h1 class="promo__title">Функциональное
+          питание для котов</h1>
+        <p class="promo__description">Занялся собой? Займись котом!</p>
+        <div class="promo__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)"
+              srcset="img/index/desktop/promo-desktop.webp 1x, img/index/desktop/promo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)"
+              srcset="img/index/tablet/promo-tablet.webp 1x, img/index/tablet/promo-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/index/mobile/promo-mobile.webp 1x, img/index/mobile/promo-mobile@2x.webp 2x">
+
+            <source media="(min-width:1440px)"
+              srcset="img/index/desktop/promo-desktop.png 1x, img/index/desktop/promo-desktop@2x.png 2x">
+            <source media="(min-width:768px)"
+              srcset="img/index/tablet/promo-tablet.png 1x, img/index/tablet/promo-tablet@2x.png 2x">
+            <img class="promo__image" src="img/index/mobile/promo-mobile.png" width="280" height="270"
+              alt="Корм из курицы Кэт энерджи.">
+          </picture>
+        </div>
+        <a class="promo__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
-    <section class="services">
+    <section class="main-index__services services">
       <h2 class="visually-hidden">Услуги подбора продуктов для необходимых целей</h2>
       <ul class="services__list">
         <li class="services__item">
@@ -72,7 +85,7 @@
         </li>
       </ul>
     </section>
-    <section class="advantages">
+    <section class="main-index__advantages advantages">
       <h2 class="advantages__title">Как это работает</h2>
       <ol class="advantages__list">
         <li class="advantages__item">
@@ -97,7 +110,7 @@
         </li>
       </ol>
     </section>
-    <section class="presentation">
+    <section class="main-index__presentation presentation">
       <h2 class="presentation__title">Живой пример</h2>
       <p class="presentation__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
         Energy Slim.
@@ -187,8 +200,8 @@
         <a class="copyright__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <span class="visually-hidden">Ссылка на интенсив "Адаптивная верстка и автоматизация в HTML Academy</span>
         <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <svg class="copyright__icon" width="27" height="34" aria-hidden="true" focusable="false" viewBox="0 0 27 34" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg class="copyright__icon" width="27" height="34" aria-hidden="true" focusable="false" viewBox="0 0 27 34"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
               fill="#666666" />
