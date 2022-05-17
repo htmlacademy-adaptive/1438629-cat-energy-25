@@ -25,14 +25,9 @@
   max-width: 139px;
 }
 
-.location__map {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
-
 @media (min-width: $tablet-width) {
   .location__wrapper {
+    background-color: $color_white;
     padding: 56px 70px;
   }
 
@@ -45,6 +40,11 @@
   .location__adress {
     max-width: 160px;
     text-align: right;
+
+    &--margin {
+      display: inline-block;
+      margin-top: 25px;
+    }
   }
 
   .location__map {
@@ -54,21 +54,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .location {
-    display: grid;
-    grid-template-columns: 1fr 565px 655px 1fr;
-    grid-template-rows: 95px 200px 107px;
-  }
-
   .location__wrapper {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    z-index: 1;
-    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    padding: 56px 80px;
+    background-color: $color_white;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .location__adress {
     text-align: left;
+    font-size: 16px;
+    justify-self: center;
   }
 
   .location__map {
