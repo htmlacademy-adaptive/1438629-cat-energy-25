@@ -8,7 +8,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-promo-background.jpg");
+    background-image: url("../img/decorative/mobile/index-promo-background.jpg");
     background-size: contain;
     background-color: $color_basic_green;
     background-position: 50% 50%;
@@ -123,7 +123,8 @@
     left: 50%;
     width: 720px;
     height: 696px;
-    background-image: url("../img/decorative/desktop/index-promo-background.jpg");
+    background-image: url("../img/decorative/desktop/index-promo-background.jpg"),
+      linear-gradient(to left, #68b738 0, #68b738 0 720px, #ffffff 0);
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: 50% 50%;

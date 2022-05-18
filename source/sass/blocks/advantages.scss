@@ -1,6 +1,6 @@
 .advantages {
   padding: 0 20px;
-  margin-bottom: 27px;
+  margin-bottom: 49px;
 }
 
 .advantages__title {
@@ -9,7 +9,7 @@
   font-family: $main_font;
   font-weight: 400;
   line-height: 40px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .advantages__list {
@@ -18,13 +18,43 @@
   list-style-type: none;
 }
 
+
 .advantages__item {
+  font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
   color: $color_special_dark_grey;
-  padding-bottom: 26px;
-  padding-left: 80px;
+  margin-bottom: 22px;
+  display: flex;
+
+  &::before {
+    display: block;
+    content: "";
+    min-width: 60px;
+    min-height: 60px;
+    background-color: $color_basic_green;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 20px;
+  }
+
+  &--first::before {
+    background-image: url("../img/decorative/mobile/advantages-item-first.svg");
+  }
+
+  &--second::before {
+    background-image: url("../img/decorative/mobile/advantages-item-second.svg");
+  }
+
+  &--third::before {
+    background-image: url("../img/decorative/mobile/advantages-item-third.svg");
+  }
+
+  &--fourth::before {
+    background-image: url("../img/decorative/mobile/advantages-item-fourth.svg");
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .advantages {
@@ -34,20 +64,48 @@
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
-    column-gap: 150px;
-    row-gap: 70px;
+    column-gap: 130px;
+    row-gap: 90px;
   }
 
   .advantages__item {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto;
+    align-content: start;
     padding: 0;
     max-width: 250px;
     min-height: 280px;
     font-size: 16px;
     line-height: 24px;
+    counter-increment: list-counter;
+
+    &::before {
+      max-width: 80px;
+      min-height: 80px;
+      margin-bottom: 31px;
+    }
+
+    &::after {
+      position: absolute;
+      content: counter(list-counter);
+      top: -40px;
+      right: 20px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: $color_basic_grey;
+      z-index: -1;
+    }
   }
 
   .advantages__title {
     line-height: 60px;
+    font-size: 60px;
+    margin-bottom: 72px;
   }
 }
 

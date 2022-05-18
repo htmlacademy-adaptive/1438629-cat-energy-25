@@ -3,3 +3,10 @@
   height: 100%;
   width: 100vw;
 }
+
+@media (min-width: $desktop-width) {
+  .map__frame {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
