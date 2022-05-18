@@ -51,6 +51,7 @@
     border: 1px solid rgba(205, 205, 205, 1);
     border-radius: 5%;
   }
+
   &--modified {
     grid-column: -1/1;
     justify-self: center;
@@ -63,6 +64,7 @@
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 40px;
+
     &::before {
       display: none;
     }
