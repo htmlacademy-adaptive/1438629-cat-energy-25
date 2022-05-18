@@ -28,7 +28,7 @@
       <nav class="main-header__main-nav main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-navigation">
-          <li class="site-navigation__item  site-navigation__item--current">
+          <li class="site-navigation__item  site-navigation__item--current site-navigation__item--current-desktop">
             <a class="site-navigation__link site-navigation__link--white">Главная</a>
           </li>
           <li class="site-navigation__item">
@@ -136,24 +136,28 @@
           <dt class="presentation__item-description">затрачено времени</dt>
           <dd class="presentation__item-value">60 дней</dd>
         </div>
-        <div class="presentation__item-modified">
-          <dt>Затраты на питание:</dt>
+        <div class="presentation__item presentation__item--modified">
+          <dt>Затраты на питание:&nbsp;</dt>
           <dd>15 000&nbsp;РУБ.</dd>
         </div>
       </dl>
-
-      <div class="presentation__slider slider-compare">
-        <img class="slider-compare__before-image" src="./img/fat-cat.png" width="280" height="232"
+      <picture>
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/index/tablet/before-after-tablet.webp 1x, img/index/tablet/before-after-tablet@2x.webp 2x">
+        <source type="image/webp"
+          srcset="img/index/mobile/before-mobile.webp 1x, img/index/mobile/before-mobile@2x.webp 2x">
+        <source media="(min-width: 768px)"
+          srcset="img/index/tablet/before-after-tablet.png 1x, img/index/tablet/before-after-tablet@2x.png 2x">
+        <img class="slider-compare__image" src="img/index/mobile/before-mobile.png" width="280" height="232"
           alt="Ваш кот до приема корма Кэт энерджи.">
-        <img class="slider-compare__after-image" src="./img/skinny-cat.png" width="280" height="232"
-          alt="Ваш кот после приема корма Кэт энерджи.">
-        <div class="slider-compare__range-bar">
-          <button class="slider-compare__button-range" type="button">Было</button>
-          <label class="slider-compare__cat-changes">
-            <input class="slider-compare__range-toggle" type="range" min="0" max="100">
-          </label>
-          <button class="slider-compare__button-range" type="button">Стало</button>
-        </div>
+      </picture>
+      <div class="presentation__slider slider-compare">
+        <button class="slider-compare__button-range" type="button">Было</button>
+        <label class="slider-compare__cat-changes">
+          <input class="slider-compare__range-toggle visually-hidden" type="range" min="0" max="100">
+          <span class="slider-compare__input"></span>
+        </label>
+        <button class="slider-compare__button-range" type="button">Стало</button>
       </div>
     </section>
   </main>
