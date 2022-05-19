@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;
+  background-color: $color_white;
 }
 
 .location__title {
@@ -22,7 +23,7 @@
   line-height: 143%;
   color: $color_special_dark_grey;
   font-style: normal;
-  max-width: 139px;
+  max-width: 142px;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,6 +41,8 @@
   .location__adress {
     max-width: 160px;
     text-align: right;
+    font-size: 16px;
+    line-height: 20px;
 
     &--margin {
       display: inline-block;

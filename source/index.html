@@ -141,23 +141,25 @@
           <dd>15 000&nbsp;РУБ.</dd>
         </div>
       </dl>
-      <picture>
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/index/tablet/before-after-tablet.webp 1x, img/index/tablet/before-after-tablet@2x.webp 2x">
-        <source type="image/webp"
-          srcset="img/index/mobile/before-mobile.webp 1x, img/index/mobile/before-mobile@2x.webp 2x">
-        <source media="(min-width: 768px)"
-          srcset="img/index/tablet/before-after-tablet.png 1x, img/index/tablet/before-after-tablet@2x.png 2x">
-        <img class="slider-compare__image" src="img/index/mobile/before-mobile.png" width="280" height="232"
-          alt="Ваш кот до приема корма Кэт энерджи.">
-      </picture>
-      <div class="presentation__slider slider-compare">
-        <button class="slider-compare__button-range" type="button">Было</button>
-        <label class="slider-compare__cat-changes">
-          <input class="slider-compare__range-toggle visually-hidden" type="range" min="0" max="100">
-          <span class="slider-compare__input"></span>
-        </label>
-        <button class="slider-compare__button-range" type="button">Стало</button>
+      <div class="presentation__slider-container slider-compare">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/index/tablet/before-after-tablet.webp 1x, img/index/tablet/before-after-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/index/mobile/before-mobile.webp 1x, img/index/mobile/before-mobile@2x.webp 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/index/tablet/before-after-tablet.png 1x, img/index/tablet/before-after-tablet@2x.png 2x">
+          <img class="slider-compare__image" src="img/index/mobile/before-mobile.png" width="280" height="232"
+            alt="Ваш кот до приема корма Кэт энерджи.">
+        </picture>
+        <div class="slider-compare__range-bar">
+          <button class="slider-compare__button-range" type="button">Было</button>
+          <label class="slider-compare__cat-changes">
+            <input class="slider-compare__range-toggle visually-hidden" type="range" min="0" max="100">
+            <span class="slider-compare__input"></span>
+          </label>
+          <button class="slider-compare__button-range" type="button">Стало</button>
+        </div>
       </div>
     </section>
   </main>
