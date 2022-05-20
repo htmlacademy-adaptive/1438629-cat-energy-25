@@ -145,13 +145,13 @@
     grid-row: 2/3;
     align-self: start;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 54px;
   }
 
   .promo__description {
-    grid-row: 3/4;
-    align-self: start;
-    margin-bottom: 49px;
+    grid-row: 2/3;
+    align-self: end;
+    margin-bottom: 0;
   }
 
   .promo__image {
@@ -163,13 +163,16 @@
   }
 
   .promo__image-wrapper {
-    grid-row: 4/5;
-    align-self: start;
-    margin-top: -91px;
+    grid-row: 1/5;
+    justify-self: center;
+    grid-column: 1/-1;
+    margin-left: 162px;
+    margin-top: 0;
   }
 
   .promo__button {
-    grid-row: 4/5;
+    grid-row: 3/4;
     align-self: start;
+    margin-top: 52px;
   }
 }
