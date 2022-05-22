@@ -6,6 +6,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .feedback__legend {
@@ -14,6 +15,18 @@
   line-height: 26px;
   margin-top: 26px;
   margin-bottom: 35px;
+  position: relative;
+  max-width: 185px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 110%;
+    height: 2px;
+    width: 100vw;
+    background-color: $color_basic_green;
+  }
 }
 
 .feedback__label {
@@ -24,6 +37,13 @@
   margin-bottom: 14px;
   color: $color_special_dark_grey;
   text-transform: uppercase;
+  position: relative;
+}
+
+.feedback__icon,
+.feedback__icon-mail {
+  position: absolute;
+  right: 16px;
 }
 
 .feedback__input {
@@ -39,4 +59,105 @@
   line-height: 18px;
   color: $color_special_dark_grey;
   text-transform: uppercase;
+
+  &:hover {
+    outline: 1px solid $color_special_grey;
+  }
+
+  &:focus-within {
+    outline: 2px solid $color_special_dark_grey;
+  }
+
+  &:invalid {
+    outline: 2px solid $color_error;
+  }
+}
+
+.feedback__icon-mail {
+  stroke: #222222;
+}
+
+.feedback__input:focus-within + .feedback__icon {
+  fill: $color_basic_green;
+}
+
+.feedback__input:focus-within + .feedback__icon-mail {
+  stroke: $color_basic_green;
+}
+
+.feedback__input:invalid + .feedback__icon-mail {
+  stroke: $color_error;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__legend {
+    font-size: 36px;
+    line-height: 36px;
+    min-width: 530px;
+    margin: 75px 0;
+    padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 60%;
+      left: -70px;
+      height: 2px;
+      width: 30px;
+      background-color: $color_basic_green;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 60%;
+      left: 105%;
+      height: 2px;
+      width: 100vw;
+      background-color: $color_basic_green;
+    }
+  }
+
+  .feedback__label {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &:last-child {
+      margin-bottom: 65px;
+    }
+  }
+
+  .feedback__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__legend {
+    margin-top: 69px;
+
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
+  }
+
+  .feedback__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    column-gap: 80px;
+    margin-bottom: 67px;
+  }
+
+  .feedback__label {
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

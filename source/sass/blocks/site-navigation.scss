@@ -102,6 +102,10 @@
     border-bottom: 2px solid $color_basic_green;
   }
 
+  .site-navigation__item--current-desktop {
+    border-bottom: 2px solid $color_white;
+  }
+
   .site-navigation__link {
     font-size: 20px;
     line-height: 30px;
