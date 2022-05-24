@@ -12,23 +12,62 @@
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-input[type='number'] {
-  -moz-appearance:textfield;
+.page__main-header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page__main {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page__main-footer {
+  width: 320px;
+  margin: 0 auto;
+}
+/* stylelint-disable */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+/* stylelint-enable */
+
+@media (min-width: $tablet-width) {
+  .page__main-header {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page__main {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page__main-footer {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .page__main-footer {
-    max-width: 1440px;
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .page__main {
+    width: 1440px;
     margin: 0 auto;
   }
 
   .page__main-header {
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     margin-bottom: 25px;
   }

@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
+  margin-bottom: 22px;
 
   &--showmore {
     display: flex;
@@ -150,14 +151,15 @@
 @media (min-width: $tablet-width) {
   .card {
     padding: 37px;
+    padding-top: 0;
     justify-content: flex-end;
     min-height: 511px;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, $color_white 0%, $color_white 87px, $color_basic_grey 87px);
+    background: linear-gradient(to bottom, $color_white 0%, $color_white 84px, $color_basic_grey 84px);
 
     &--showmore {
       box-sizing: border-box;
-      min-height: 405px;
+      min-height: 429px;
       background: $color_white;
       border: 2px solid $color_basic_grey;
       align-self: end;
@@ -179,21 +181,23 @@
   .card__container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 33px;
 
     &--showmore {
       max-height: 430px;
       justify-content: flex-end;
       padding-top: 0;
+      margin-bottom: 85px;
 
       &::before {
-        top: -8%;
-        left: 38%;
+        top: -75px;
+        left: calc(50% - 30px);
         width: 60px;
       }
 
       &::after {
-        top: -8%;
-        left: 38%;
+        top: -75px;
+        left: calc(50% - 30px);
         width: 60px;
       }
     }
@@ -219,6 +223,7 @@
   .card__description {
     font-size: 16px;
     line-height: 18px;
+    margin: 0;
   }
 
   .card__title {
@@ -233,7 +238,6 @@
   }
 
   .card__button {
-    margin-top: 33px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -241,10 +245,14 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    padding: 41px 36px 47px;
+    padding: 41px 36px 40px;
+    background: linear-gradient(to bottom, $color_white 0%, $color_white 130px, $color_basic_grey 130px);
+
 
     &--showmore {
       padding: 41px 36px;
+      min-height: 431px;
+      background: $color_white;
     }
   }
 
@@ -254,11 +262,13 @@
       box-sizing: border-box;
 
       &::before {
-        left: 30%;
+        top: -20px;
+        left: calc(50% - 30px);
       }
 
       &::after {
-        left: 30%;
+        top: -20px;
+        left: calc(50% - 30px);
       }
     }
   }

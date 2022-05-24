@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="./css/style.css">
 
   <title>Каталог: Кэт энерджи</title>
@@ -42,7 +45,7 @@
       </nav>
     </div>
   </header>
-  <main class="main-catalog">
+  <main class="page__main main-catalog">
     <div class="main-catalog__container container">
       <h1 class="main-catalog__title">Каталог продукции</h1>
       <section class="main-catalog__products products">
@@ -303,7 +306,7 @@
           <li class="products__item card card--showmore">
             <div class="card__container card__container--showmore">
               <a class="card__link">
-                <h3 class="card__title card__title--showmore">Показать еще 100500 товаров</h3>
+                <h3 class="card__title card__title--showmore">Показать еще<br class="card__title-br"> 100500 товаров</h3>
               </a>
               <p class="card__description">На самом деле вкусов гораздо больше!</p>
             </div>
@@ -312,9 +315,13 @@
           </li>
         </ul>
       </section>
-      <section class="main-catalog__addproducts addproducts">
-        <!-- Дополнительные товары -->
+    </div>
+    <section class="main-catalog__addproducts addproducts">
+      <!-- Дополнительные товары -->
+      <div class="addproducts__decore-wrapper">
         <h2 class="addproducts__title">Дополнительные товары</h2>
+      </div>
+      <div class="addproducts__container container">
         <ul class="addproducts__list">
           <li class="addproducts__item">
             <h3 class="addproducts__title-card">Сахарозаменитель</h3>
@@ -357,8 +364,9 @@
             и получите чехол для
             кота в подарок!</p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
   </main>
   <footer class="page__main-footer main-footer">
     <section class="main-footer__location location">

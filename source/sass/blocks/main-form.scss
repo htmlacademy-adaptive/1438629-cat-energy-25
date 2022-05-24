@@ -30,7 +30,7 @@
   margin-bottom: 39px;
   text-transform: uppercase;
   font-family: $main-font;
-  max-width: 226px;
+  max-width: 269px;
 }
 
 .main-form__products {
@@ -66,7 +66,7 @@
   .main-form__description {
     font-size: 20px;
     line-height: 30px;
-    min-width: 325px;
+    min-width: 500px;
     margin-bottom: 66px;
   }
 }
@@ -78,5 +78,9 @@
 
   .main-form__title {
     margin-bottom: 56px;
+  }
+
+  .main-form__description {
+    min-width: 600px;
   }
 }

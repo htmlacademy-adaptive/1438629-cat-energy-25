@@ -1,32 +1,30 @@
+.addproducts__decore-wrapper {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  min-height: 85px;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: $color-basic-green;
+    z-index: -1;
+  }
+}
+
 .addproducts__title {
   font-family: $main-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 25px;
-
-  &::before {
-    position: absolute;
-    top: 65%;
-    left: 245px;
-    height: 2px;
-    width: 100vw;
-    background-color: $color_basic_green;
-    content: "";
-    display: none;
-  }
-
-  &::after {
-    position: absolute;
-    top: 65%;
-    left: 245px;
-    height: 2px;
-    width: 100vw;
-    background-color: $color_basic_green;
-    content: "";
-  }
+  position: absolute;
+  padding: 25px 20px 34px;
+  margin: 0;
+  background-color: $color_white;
 }
 
 .addproducts__list {
@@ -75,7 +73,7 @@
   background-image: url("../img/decorative/mobile/gift.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: cover;
   min-height: 290px;
 
   @media (min-resolution: 2dppx) {
@@ -113,20 +111,13 @@
   .addproducts__title {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 35px;
-    margin-bottom: 68px;
-    margin-top: 75px;
+    padding: 0 36px;
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
 
-    &::after {
-      left: 360px;
-    }
-
-    &::before {
-      display: inline-block;
-      top: 65%;
-      left: -65px;
-      width: 30px;
-    }
+  .addproducts__decore-wrapper {
+    min-height: 45px;
   }
 
   .addproducts__item {
@@ -188,26 +179,23 @@
 }
 
 @media (min-width: $desktop-width) {
-  .addproducts {
+  .addproducts__container {
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: auto auto;
     column-gap: 80px;
-    margin-bottom: 5px;
+    margin-bottom: 86px;
+  }
+
+  .addproducts__decore-wrapper {
+    margin-left: 0;
+    margin-bottom: 81px;
+    margin-top: 75px;
   }
 
   .addproducts__title {
-    grid-column: 1/-1;
-    grid-row: 1/2;
-    margin-left: 0;
-    margin-bottom: 77px;
-
-    &::before {
-      display: inline-block;
-      top: 65%;
-      left: -110px;
-      width: 70px;
-    }
+    margin: 0;
+    margin-left: 110px;
   }
 
   .addproducts__list {
@@ -222,15 +210,20 @@
     row-gap: 0;
     align-items: center;
     column-gap: 38px;
-    padding: 13px 0;
+    padding: 15px 0;
     border-left: none;
     border-right: none;
+  }
+
+  .addproducts__title-card {
+    line-height: 20px;
   }
 
   .addproducts__button {
     grid-column: 3/4;
     width: 250px;
-    padding: 7px;
+    padding: 10px;
+    line-height: 20px;
   }
 
   .addproducts__gift {
@@ -239,6 +232,8 @@
     background-image: url("../img/decorative/desktop/promo-image-desktop.jpg");
     background-repeat: no-repeat;
     min-height: 289px;
+    grid-row: 2/3;
+    margin: 0;
 
     &::before {
       top: -100px;

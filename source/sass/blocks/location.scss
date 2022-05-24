@@ -34,6 +34,10 @@
   .location__wrapper {
     background-color: $color_white;
     padding: 56px 70px;
+
+    &--inner {
+      background-color: $color_basic_grey;
+    }
   }
 
   .location__title {
