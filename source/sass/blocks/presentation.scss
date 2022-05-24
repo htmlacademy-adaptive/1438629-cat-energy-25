@@ -8,14 +8,14 @@
   font-size: 36px;
   margin: 0;
   line-height: 40px;
-  padding-top: 25px;
+  padding-top: 23px;
   margin-bottom: 40px;
 }
 
 .presentation__description {
   font-family: $second_font;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   font-size: 14px;
   line-height: 18px;
   color: $color_special_dark_grey;
@@ -81,6 +81,7 @@
   line-height: 24px;
   margin: 8px;
   order: -1;
+  text-transform: uppercase;
 }
 
 .presentation__item-description {
@@ -91,7 +92,7 @@
   padding: 0 10px;
   text-align: center;
   background-color: rgba(234, 234, 234, 1);
-  max-width: 87px;
+  max-width: 85px;
   color: $color_special_dark_grey;
 }
 
@@ -113,6 +114,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
+    max-width: 695px;
   }
 
   .presentation__list {

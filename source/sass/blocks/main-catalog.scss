@@ -5,14 +5,14 @@
 .main-catalog__title {
   position: relative;
   margin-top: 27px;
-  margin-bottom: 41px;
+  margin-bottom: 61px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 
   &::before {
     position: absolute;
-    top: -31px;
+    top: -27px;
     right: 0;
     left: -30px;
     content: "";
@@ -35,8 +35,8 @@
 
 @media (min-width: $tablet-width) {
   .main-catalog__title {
-    margin-top: 15px;
-    margin-bottom: 78px;
+    margin-top: 40px;
+    margin-bottom: 82px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;

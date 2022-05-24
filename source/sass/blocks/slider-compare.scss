@@ -13,15 +13,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
+  padding-top: 4px;
 }
 
 .slider-compare__input {
   position: relative;
   display: inline-block;
   width: 86px;
-  height: 16px;
-  margin: 0 15px;
+  height: 12px;
+  margin: 0 16px;
   border: 1px solid rgba(205, 205, 205, 1);
   border-radius: 6px;
   background-color: $color_white;
@@ -31,10 +32,10 @@
   &::before {
     position: absolute;
     content: "";
-    top: 4px;
+    top: 3px;
     left: 3px;
     width: calc(100% / 2 - 4px);
-    height: 8px;
+    height: 6px;
     border-radius: 6px;
     background: $color_basic_green;
   }
@@ -85,6 +86,7 @@
 
   .slider-compare__cat-changes {
     align-self: flex-start;
+    margin: 0 10px;
   }
 
   .slider-compare__input {
@@ -96,11 +98,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
+      top: -17px;
+      left: 198px;
       width: 34px;
       height: 34px;
       border-radius: 50%;
@@ -112,11 +111,8 @@
     &::after {
       position: absolute;
       content: "";
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
+      top: -3px;
+      left: 212px;
       width: 8px;
       height: 8px;
       background-color: $color_basic_green;

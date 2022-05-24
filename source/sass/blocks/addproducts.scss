@@ -1,7 +1,5 @@
 .addproducts__decore-wrapper {
   position: relative;
-  margin-top: 30px;
-  margin-bottom: 25px;
   box-sizing: border-box;
   min-height: 85px;
 
@@ -34,7 +32,8 @@
 }
 
 .addproducts__item {
-  padding: 15px 0;
+  padding: 0;
+  padding-bottom: 17px;
   border-bottom: 1px solid $color_special_grey;
 
   &:first-child {
@@ -47,6 +46,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  margin-top: 14px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   color: $color_special_dark_grey;
 }
@@ -118,6 +119,8 @@
 
   .addproducts__decore-wrapper {
     min-height: 45px;
+    margin-top: 30px;
+    margin-bottom: 73px;
   }
 
   .addproducts__item {

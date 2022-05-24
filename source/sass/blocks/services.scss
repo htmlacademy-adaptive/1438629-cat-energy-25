@@ -1,5 +1,5 @@
 .services {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .services__list {
@@ -21,7 +21,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: 24px;
+    top: 32px;
     left: 22px;
     width: 50px;
     height: 50px;
@@ -38,7 +38,7 @@
     background-position: center center;
     width: 36px;
     height: 50px;
-    top: 16px;
+    top: 22px;
     left: 29px;
     background-image: url("../img/decorative/mobile/service-list-item-type-one.svg");
   }
@@ -48,7 +48,7 @@
     content: "";
     background-repeat: no-repeat;
     background-position: center center;
-    top: 34px;
+    top: 37px;
     left: 12px;
     width: 67px;
     height: 28px;
@@ -124,6 +124,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .services {
+    padding: 0 30px;
+  }
+
   .services__list {
     margin-bottom: 45px;
   }
@@ -134,7 +138,7 @@
     grid-template-columns: 340px 1fr;
     grid-template-rows: repeat(3, auto);
     column-gap: 20px;
-    padding: 77px 25px 50px 52px;
+    padding: 66px 25px 56px 52px;
     margin-bottom: 30px;
 
     &::before {
@@ -144,8 +148,8 @@
       height: 200px;
       border-radius: 50%;
       background-color: $color_basic_green;
-      top: 92px;
-      left: 446px;
+      top: 111px;
+      left: 448px;
     }
 
     &--weight-loss::after {
@@ -155,7 +159,7 @@
       background-position: center center;
       width: 140px;
       height: 194px;
-      top: 61px;
+      top: 80px;
       left: 476px;
       background-image: url("../img/decorative/tablet/service-list-item-type-one.svg");
     }
@@ -165,8 +169,8 @@
       content: "";
       background-repeat: no-repeat;
       background-position: center center;
-      top: 118px;
-      left: 414px;
+      top: 135px;
+      left: 412px;
       width: 268px;
       height: 112px;
       background-image: url("../img/decorative/tablet/service-list-item-type-two.svg");
@@ -177,6 +181,7 @@
     padding: 0;
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 26px;
     text-align: left;
   }
 
@@ -199,6 +204,11 @@
     grid-column: 1/2;
     grid-row: 3/4;
     margin: 0;
+  }
+
+  .services__icon {
+    margin-left: 22px;
+    margin-bottom: 4px;
   }
 }
 

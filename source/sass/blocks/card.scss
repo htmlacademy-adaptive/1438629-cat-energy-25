@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 0;
+  padding: 0;
 
   &::after {
     position: absolute;
@@ -21,7 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  margin-bottom: 22px;
+  margin-bottom: 8px;
 
   &--showmore {
     display: flex;
@@ -34,8 +34,8 @@
 
     &::before {
       position: absolute;
-      top: 20%;
-      left: 43%;
+      top: 17%;
+      left: calc(50% - 15px);
       content: "";
       width: 30px;
       height: 2px;
@@ -44,8 +44,8 @@
 
     &::after {
       position: absolute;
-      top: 20%;
-      left: 43%;
+      top: 17%;
+      left: calc(50% - 15px);
       content: "";
       width: 30px;
       height: 2px;
@@ -74,7 +74,8 @@
   text-align: center;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 20px;
+  margin-top: 7px;
+  margin-bottom: 13px;
   color: $color_special_dark_grey;
 }
 
@@ -100,12 +101,13 @@
   line-height: 16px;
   font-family: $second-font;
   color: $color_special_dark_grey;
+  align-self: center;
+  margin-bottom: 8px;
 }
 
 .card__subitem {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2px;
 }
 
 .card__subitem dd {
@@ -122,6 +124,9 @@
 
 .card__button {
   border: 0;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 22px;
 
   &:hover {
     background-color: $color_basic_green_2;
@@ -148,9 +153,14 @@
   }
 }
 
+.card__title-br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .card {
     padding: 37px;
+    padding-bottom: 0;
     padding-top: 0;
     justify-content: flex-end;
     min-height: 511px;
@@ -181,7 +191,7 @@
   .card__container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 33px;
+    margin-bottom: 0;
 
     &--showmore {
       max-height: 430px;
@@ -206,18 +216,34 @@
   .card__image {
     width: 168px;
     height: 200px;
-    margin-bottom: 34px;
     box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 33px;
+  }
+
+  .card__link-image {
+    margin: 0;
+    text-align: center;
   }
 
   .card__sublist {
     row-gap: 7px;
+    min-width: 250px;
+    margin-bottom: 33px;
+    margin-top: 0;
   }
 
   .card__subitem {
     border-bottom: 1px solid rgba(205, 205, 205, 1);
     font-size: 16px;
     padding-bottom: 9px;
+  }
+
+  .card__link {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 21px;
   }
 
   .card__description {
@@ -230,16 +256,15 @@
     text-align: center;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 21px;
-  }
-
-  .card__link-image {
-    text-align: center;
+    margin-bottom: 0;
   }
 
   .card__button {
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 39px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

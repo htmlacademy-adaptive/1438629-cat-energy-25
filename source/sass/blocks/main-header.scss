@@ -24,6 +24,11 @@
   display: block;
 }
 
+.main-header__logo-text {
+  margin-top: 3px;
+  margin-right: 12px;
+}
+
 @media (min-width: $tablet-width) {
   .main-header__container {
     width: 768px;
@@ -35,6 +40,7 @@
 
   .main-header__container-logo {
     min-width: 174px;
+    margin-top: 4px;
   }
 
   .main-header__logo-img {
@@ -45,6 +51,7 @@
   .main-header__main-nav {
     min-width: 440px;
     margin-left: auto;
+    margin-top: 10px;
   }
 
   .main-header__logo-text {

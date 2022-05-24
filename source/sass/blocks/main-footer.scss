@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 55px;
+  min-height: 63px;
   border-bottom: 1px solid #d9d9d9;
   padding: 0;
 }
@@ -25,6 +25,7 @@
   width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
+  margin-top: 7px;
 }
 
 .main-footer__logo-link {
@@ -83,6 +84,8 @@
 
   .main-footer__social-list {
     border: 0;
+    justify-content: space-between;
+    max-width: 148px;
   }
 
   .main-footer__map {

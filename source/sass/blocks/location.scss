@@ -24,7 +24,7 @@
   font-family: $second_font;
   font-weight: 400;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 20px;
   color: $color_special_dark_grey;
   font-style: normal;
   max-width: 142px;
@@ -33,7 +33,7 @@
 @media (min-width: $tablet-width) {
   .location__wrapper {
     background-color: $color_white;
-    padding: 56px 70px;
+    padding: 60px 70px 56px;
 
     &--inner {
       background-color: $color_basic_grey;
@@ -54,7 +54,7 @@
 
     &--margin {
       display: inline-block;
-      margin-top: 25px;
+      margin-top: 19px;
     }
   }
 
