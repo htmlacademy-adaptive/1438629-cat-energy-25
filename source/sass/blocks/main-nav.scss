@@ -22,9 +22,9 @@
     display: none;
     position: absolute;
     min-height: 23px;
-    width: 30px;
-    top: -49px;
-    right: 2px;
+    width: 24px;
+    top: -46px;
+    right: 0;
     border: none;
     border-bottom: 2px solid $color_black;
     background-color: transparent;
@@ -71,7 +71,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 320px;
     background-color: $color_white;
     z-index: 3;
     opacity: 1;

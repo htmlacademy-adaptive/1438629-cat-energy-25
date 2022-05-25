@@ -1,3 +1,32 @@
-.main-inder {
+.main-index {
   font-family: $main_font;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-index__presentation {
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-index__presentation {
+    padding: 0 30px;
+  }
+
+  .main-index__services {
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-index__presentation {
+    display: grid;
+    grid-template-columns: 1fr 591px;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 193px;
+  }
+
+  .main-index__promo {
+    margin-bottom: 144px;
+  }
 }

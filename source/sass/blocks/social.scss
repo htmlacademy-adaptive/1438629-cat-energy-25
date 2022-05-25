@@ -8,6 +8,8 @@
   width: 34px;
   min-height: 28px;
   margin-right: 20px;
+  text-align: center;
+  padding-top: 9px;
 
   &:last-child {
     margin-right: 0;
@@ -32,4 +34,14 @@
   display: inline-block;
   width: 100%;
   fill: $color_special_grey_2;
+}
+
+@media (min-width: $tablet-width) {
+  .social__item:first-child {
+    margin-right: 15px;
+  }
+
+  .social__item:last-child {
+    margin-right: 8px;
+  }
 }
