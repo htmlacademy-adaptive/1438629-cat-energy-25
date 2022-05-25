@@ -68,7 +68,7 @@
   .location__wrapper {
     display: grid;
     grid-template-columns: min-content 1fr;
-    padding: 56px 80px;
+    padding: 59px 80px;
     background-color: $color_white;
     font-size: 20px;
     line-height: 26px;
@@ -77,7 +77,7 @@
   .location__adress {
     text-align: left;
     font-size: 16px;
-    justify-self: center;
+    justify-self: flex-end;
   }
 
   .location__map {

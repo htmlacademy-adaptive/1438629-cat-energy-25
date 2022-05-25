@@ -223,7 +223,7 @@
     &::before {
       position: absolute;
       content: "";
-      top: 47px;
+      top: 57px;
       left: 52px;
       width: 100px;
       height: 100px;
@@ -240,7 +240,7 @@
       background-position: center center;
       width: 70px;
       height: 97px;
-      top: 34px;
+      top: 41px;
       left: 67px;
       background-image: url("../img/decorative/desktop/service-list-item-type-one.svg");
     }
@@ -250,7 +250,7 @@
       content: "";
       background-repeat: no-repeat;
       background-position: center center;
-      top: 60px;
+      top: 68px;
       left: 33px;
       width: 134px;
       height: 56px;
@@ -262,19 +262,36 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 39px;
   }
 
   .services__title {
     margin-top: 0;
-    margin-bottom: 73px;
-    margin-left: 161px;
+    margin-bottom: 76px;
     text-align: right;
     min-width: 206px;
+
+    &--home-cat {
+      max-width: 140px;
+      margin-left: 128px;
+    }
+
+    &--wild-cat {
+      margin-left: 167px;
+    }
   }
 
   .services__description {
     margin-bottom: 28px;
     min-width: 467px;
+    padding-left: 6px;
+  }
+
+  .services__link {
+    padding-left: 6px;
+  }
+
+  .services__icon {
+    margin-left: 26px;
   }
 }

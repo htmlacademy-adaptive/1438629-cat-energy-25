@@ -121,4 +121,14 @@
     column-gap: 70px;
     row-gap: 0;
   }
+
+  .advantages__item {
+    max-width: 230px;
+    margin-left: 2px;
+
+    &::before {
+      margin-bottom: 32px;
+      margin-left: 7px;
+    }
+  }
 }

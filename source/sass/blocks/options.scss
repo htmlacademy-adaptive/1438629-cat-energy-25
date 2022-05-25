@@ -93,9 +93,11 @@
 @media (min-width: $tablet-width) {
   .options__decore-wrapper {
     min-height: 36px;
+    margin-top: 0;
+    margin-bottom: 53px;
 
     &::before {
-      top: 50%;
+      top: 65%;
     }
   }
 
@@ -115,7 +117,11 @@
     column-gap: 58px;
     align-items: center;
     padding-top: 11px;
-    margin-bottom: 54px;
+    margin-bottom: 46px;
+  }
+
+  .options__text {
+    padding-left: 58px;
   }
 
   .options__label {
@@ -151,5 +157,9 @@
 
   .options__item {
     margin-bottom: 0;
+  }
+
+  .options__decore-wrapper {
+    margin-bottom: 64px;
   }
 }

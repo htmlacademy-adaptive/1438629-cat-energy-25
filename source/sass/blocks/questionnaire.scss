@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+  max-width: 280px;
 
   &:last-child {
     margin-bottom: 24px;
@@ -24,8 +25,8 @@
 
 .questionnaire__input {
   box-sizing: border-box;
-  margin-left: 12px;
   flex-grow: 1;
+  margin-left: 19px;
   padding-top: 9px;
   padding-bottom: 10px;
   padding-left: 16px;
@@ -34,6 +35,10 @@
   font-size: 16px;
   line-height: 18px;
   color: $color_special_dark_grey;
+
+  &--short {
+    max-width: 168px;
+  }
 
   &:hover {
     border: 1px solid rgba(205, 205, 205, 1);
@@ -53,6 +58,7 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
+    max-width: 100%;
 
     &:last-child {
       margin-bottom: 72px;
@@ -62,5 +68,6 @@
   .questionnaire__input {
     font-size: 20px;
     line-height: 30px;
+    max-width: 100%;
   }
 }

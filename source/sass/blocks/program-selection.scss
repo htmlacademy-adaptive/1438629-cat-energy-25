@@ -132,12 +132,13 @@
 
 @media (min-width: $tablet-width) {
   .program-selection__container {
-    margin-bottom: 69px;
+    margin-bottom: 75px;
   }
 
   .program-selection__radio {
     border: 1px solid #e7e7e7;
     padding: 30px;
+    padding-top: 27px;
 
     &::before,
     &::after {
@@ -152,6 +153,8 @@
   .program-selection__item {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 21px;
+    margin-top: 8px;
   }
 
   .program-selection__item:last-child {
@@ -161,6 +164,7 @@
   .program-selection__input-custom {
     width: 40px;
     height: 40px;
+    margin-left: -3px;
 
     &::before {
       width: 18px;
@@ -169,7 +173,7 @@
   }
 
   .program-selection__text {
-    padding-left: 70px;
+    padding-left: 58px;
   }
 
   .program-selection__button-wrapper {
@@ -179,7 +183,7 @@
     align-items: center;
     column-gap: 65px;
     margin-top: -10px;
-    margin-bottom: 65px;
+    margin-bottom: 47px;
   }
 
   .program-selection__button {
@@ -201,6 +205,7 @@
     grid-template-rows: 196px;
     column-gap: 80px;
     box-sizing: border-box;
+    margin-bottom: 70px;
   }
 
   .program-selection__list {
@@ -219,6 +224,7 @@
 
   .program-selection__button-wrapper {
     margin-top: 66px;
+    margin-bottom: 61px;
   }
 
   .program-selection__button {
