@@ -121,7 +121,7 @@
     min-width: 530px;
     margin: 0;
     padding: 0 25px 0 39px;
-    margin-left: 30px;
+    margin-left: calc((100vw - 708px)/2);
   }
 
   .feedback__label {
@@ -150,7 +150,7 @@
 
   .feedback__legend {
     margin: 0;
-    margin-left: 70px;
+    margin-left: calc(((100vw - 1220px)/2) - 40px);
   }
 
   .feedback__container {

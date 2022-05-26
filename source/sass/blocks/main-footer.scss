@@ -52,7 +52,7 @@
 
 .main-footer__copyright {
   min-height: 70px;
-  width: 100%;
+  width: 320px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,6 +70,8 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     min-height: 147px;
+    margin: 0 auto;
+    width: 768px;
   }
 
   .main-footer__logo-link {
@@ -101,14 +103,13 @@
   .main-footer {
     display: grid;
     grid-template-columns: 1fr 565px 655px 1fr;
-    grid-template-rows: 95px 200px 107px auto;
+    grid-template-rows: 95px 198px 107px auto;
   }
 
   .main-footer__location {
     grid-column: 2/3;
     grid-row: 2/3;
     z-index: 1;
-    margin-top: -8px;
   }
 
   .main-footer__map {
@@ -120,5 +121,7 @@
     grid-column: -1/1;
     grid-row: 4/5;
     padding: 0 110px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }

@@ -9,7 +9,7 @@
     position: absolute;
     content: "";
     background-image: url("../img/decorative/mobile/index-promo-background.jpg");
-    background-size: contain;
+    background-size: cover;
     background-color: $color_basic_green;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -64,7 +64,6 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    padding: 0 30px;
 
     &::before {
       display: none;
@@ -87,7 +86,7 @@
 
   .promo__container {
     display: grid;
-    grid-template-columns: 58px 1fr;
+    grid-template-columns: 87px 1fr;
     grid-template-rows: auto auto 610px;
     justify-content: start;
   }
@@ -131,14 +130,14 @@
     display: block;
     top: -143px;
     left: 50%;
-    width: 720px;
+    width: inherit;
     height: 696px;
     background-image: url("../img/decorative/desktop/index-promo-background.jpg"),
       linear-gradient(to left, #68b738 0, #68b738 0 720px, #ffffff 0);
     background-color: transparent;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
+    background-position: 0 50%;
+    background-size: cover;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {

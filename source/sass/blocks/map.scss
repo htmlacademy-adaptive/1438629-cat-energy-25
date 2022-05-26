@@ -2,11 +2,11 @@
   border: 0;
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
 @media (min-width: $desktop-width) {
   .map__frame {
-    max-width: 1440px;
     margin: 0 auto;
   }
 }
