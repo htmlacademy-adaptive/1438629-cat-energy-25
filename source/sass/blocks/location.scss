@@ -1,9 +1,11 @@
 .location {
   background-color: $color_white;
+
   &--inner {
     background-color: $color_basic_grey;
   }
 }
+
 .location__wrapper {
   display: flex;
   justify-content: space-between;
@@ -11,6 +13,7 @@
   background-color: $color_white;
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   &--inner {
     background-color: $color_basic_grey;

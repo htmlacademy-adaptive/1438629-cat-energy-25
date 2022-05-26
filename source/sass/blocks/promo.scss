@@ -9,8 +9,8 @@
     position: absolute;
     content: "";
     background-image: url("../img/decorative/mobile/index-promo-background.jpg");
-    background-size: cover;
-    background-color: $color_basic_green;
+    background-size: contain;
+    background-color: #62a545;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     width: 100%;

@@ -106,7 +106,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
-    margin-left: calc((100vw - 708px)/2);
+    margin-left: calc((100vw - 708px) / 2);
   }
 
   .options__list {
@@ -144,7 +144,7 @@
 @media (min-width: $desktop-width) {
   .options__title {
     margin-bottom: 67px;
-    margin-left: calc(((100vw - 1220px)/2) - 40px);
+    margin-left: calc(((100vw - 1220px) / 2) - 40px);
   }
 
   .options__list {

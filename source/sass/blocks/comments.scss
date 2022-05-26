@@ -69,7 +69,7 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0;
-    margin-left: calc((100vw - 708px)/2);
+    margin-left: calc((100vw - 708px) / 2);
     padding: 0 40px;
   }
 
@@ -84,7 +84,7 @@
 
 @media (min-width: $desktop-width) {
   .comments__legend {
-    margin-left: calc(((100vw - 1220px)/2) - 40px);
+    margin-left: calc(((100vw - 1220px) / 2) - 40px);
   }
 
   .comments__textarea {
