@@ -13,12 +13,12 @@
 
   &::before {
     position: absolute;
-    top: -31px;
+    top: -28px;
     right: 0;
-    left: -30px;
+    left: -1000px;
     content: "";
     height: 1px;
-    width: calc(100vw + 30px);
+    width: calc(100vw + 1000px);
     background-color: rgba(230, 230, 230, 1);
   }
 }
@@ -26,11 +26,10 @@
 .main-form__description {
   font-size: 14px;
   line-height: 18px;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 39px;
   text-transform: uppercase;
   font-family: $main-font;
-  max-width: 269px;
 }
 
 .main-form__products {
@@ -47,11 +46,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-form__container {
-    padding-left: 70px;
-    padding-right: 65px;
-  }
-
   .main-form__title {
     font-size: 60px;
     line-height: 60px;

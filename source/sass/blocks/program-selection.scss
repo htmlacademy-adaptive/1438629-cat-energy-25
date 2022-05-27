@@ -48,20 +48,20 @@
 
   &::before {
     position: absolute;
-    left: -30px;
+    left: -1000px;
     content: "";
     height: 1px;
-    width: calc(100vw + 30px);
+    width: calc(100vw + 1000px);
     background-color: #d9d9d9;
   }
 
   &::after {
     position: absolute;
-    left: -30px;
+    left: -1000px;
     bottom: 0;
     content: "";
     height: 1px;
-    width: calc(100vw + 30px);
+    width: calc(100vw + 1000px);
     background-color: #d9d9d9;
   }
 }
@@ -107,6 +107,12 @@
   border-color: #bababa;
 }
 
+.program-selection__input:focus + .program-selection__input-custom {
+  border-color: #bababa;
+  outline: solid 2px #bababa;
+}
+
+
 .program-selection__description {
   text-align: center;
   margin: 0;
@@ -130,9 +136,13 @@
   padding: 0;
 }
 
+.program-selection__comments {
+  margin-bottom: 39px;
+}
+
 @media (min-width: $tablet-width) {
-  .program-selection__container {
-    margin-bottom: 75px;
+  .program-selection__questionnaire {
+    margin-bottom: 72px;
   }
 
   .program-selection__radio {
@@ -202,10 +212,13 @@
   .program-selection__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 196px;
+    grid-template-rows: min-content;
     column-gap: 80px;
     box-sizing: border-box;
-    margin-bottom: 70px;
+  }
+
+  .program-selection__questionnaire {
+    margin-bottom: 72px;
   }
 
   .program-selection__list {
@@ -218,6 +231,9 @@
 
   .program-selection__radio {
     min-height: 196px;
+    margin-bottom: 72px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     display: block;
     box-sizing: border-box;
   }
@@ -229,5 +245,9 @@
 
   .program-selection__button {
     min-width: 568px;
+  }
+
+  .program-selection__comments {
+    margin-bottom: 67px;
   }
 }

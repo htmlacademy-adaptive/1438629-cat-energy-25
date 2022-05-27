@@ -1,8 +1,19 @@
+.location {
+  background-color: $color_white;
+
+  &--inner {
+    background-color: $color_basic_grey;
+  }
+}
+
 .location__wrapper {
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;
   background-color: $color_white;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   &--inner {
     background-color: $color_basic_grey;
@@ -34,6 +45,9 @@
   .location__wrapper {
     background-color: $color_white;
     padding: 60px 70px 56px;
+    width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box;
 
     &--inner {
       background-color: $color_basic_grey;
@@ -65,6 +79,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .location {
+    min-height: 195px;
+  }
+
   .location__wrapper {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -72,6 +90,8 @@
     background-color: $color_white;
     font-size: 20px;
     line-height: 26px;
+    width: 565px;
+    box-sizing: border-box;
   }
 
   .location__adress {

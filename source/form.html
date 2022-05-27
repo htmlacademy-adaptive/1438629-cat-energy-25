@@ -9,6 +9,10 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 
 
   <title>Подбор программы: Кэт энерджи</title>
@@ -31,7 +35,7 @@
             alt="Питание Кэт энерджи.">
         </a>
       </div>
-      <nav class="main-header__main-nav main-nav main-nav--closed">
+      <nav class="main-header__main-nav main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-navigation">
           <li class="site-navigation__item">
@@ -49,7 +53,7 @@
   </header>
   <main class="page__main main-form">
     <h1 class="main-form__title container container--form">Подбор программы</h1>
-    <p class="main-form__description container container--form">Заполните анкету, и мы подберем
+    <p class="main-form__description container container--form">Заполните анкету, и мы подберем<br>
       программу питания для вашего кота</p>
     <form class="main-form__program-selection program-selection" action="https://echo.htmlacademy.ru/" method="get">
       <div class="program-selection__container container container--form">
@@ -95,11 +99,7 @@
       </div>
 
       <fieldset class="program-selection__feedback feedback">
-        <legend class="visually-hidden">Контактные данные</legend>
-        <div class="feedback__decore-wrapper">
-          <h2 class="feedback__legend">Контактные данные
-            (владельца кота)</h2>
-        </div>
+        <legend class="feedback__legend">Контактные данные (владельца кота)</legend>
         <div class="feedback__container container container--form">
           <label class="feedback__label">E-mail:*
             <input class="feedback__input" type="email" placeholder="kuklachev@gmail.com">
@@ -117,20 +117,14 @@
         </div>
       </fieldset>
       <fieldset class="program-selection__comments comments">
-        <legend class="visually-hidden">Поле для ввода комментариев</legend>
-        <div class="comments__decore-wrapper">
-          <h2 class="comments__legend">Комментарий</h2>
-        </div>
+        <legend class="comments__legend">Комментарий</legend>
         <div class="comments__container container container--form">
           <textarea class="comments__textarea" id="comments-area" name="user-comment" cols="30" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="program-selection__options options">
-        <legend class="visually-hidden">Выбор дополнительных товаров</legend>
-        <div class="options__decore-wrapper">
-          <h2 class="options__title">Дополнительно</h2>
-        </div>
+        <legend class="options__title">Дополнительно</legend>
         <div class="options__container container container--form">
           <ul class="options__list">
             <li class="options__item">
@@ -172,8 +166,8 @@
 
   </main>
   <footer class="page__main-footer main-footer">
-    <section class="main-footer__location location">
-      <div class="location__wrapper">
+    <section class="main-footer__location location location--inner">
+      <div class="location__wrapper location__wrapper--inner">
         <h2 class="location__title">приглашаем<br>к сотрудничеству дилеров!</h2>
         <address class="location__adress">ул. Большая
           Конюшенная,&nbsp; д. 19/8
@@ -182,9 +176,17 @@
       </div>
     </section>
     <div class="main-footer__map map map--fullsize">
-      <iframe class="map__frame"
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A6cb0badf31482bce998f15db32dc193cc5cacd92af1c434716fc901f27758a92&amp;source=constructor"
-        height="362" width="320"></iframe>
+      <picture>
+        <source type="image/webp" media="(min-width:1440px)"
+          srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width:768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
+        <source media="(min-width:1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+        <source media="(min-width:768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+        <img class="map__image" src="img/map-mobile.png" width="320" height="362" srcset="img/map-mobile@2x.png 2x"
+          alt="Точка нашего офиса на карте.">
+      </picture>
     </div>
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-link" href="#">

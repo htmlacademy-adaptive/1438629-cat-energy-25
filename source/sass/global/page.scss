@@ -3,12 +3,12 @@
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  font-family: $second_font;
 }
 
 .page__body {
-  font-family: $second_font;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -17,15 +17,6 @@
   margin: 0 auto;
 }
 
-.page__main {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.page__main-footer {
-  width: 320px;
-  margin: 0 auto;
-}
 /* stylelint-disable */
 input[type="number"] {
   -moz-appearance: textfield;
@@ -42,30 +33,9 @@ input::-webkit-inner-spin-button {
     width: 768px;
     margin: 0 auto;
   }
-
-  .page__main {
-    width: 768px;
-    margin: 0 auto;
-  }
-
-  .page__main-footer {
-    width: 768px;
-    margin: 0 auto;
-  }
 }
 
-
 @media (min-width: $desktop-width) {
-  .page__main-footer {
-    width: 1440px;
-    margin: 0 auto;
-  }
-
-  .page__main {
-    width: 1440px;
-    margin: 0 auto;
-  }
-
   .page__main-header {
     width: 1440px;
     margin: 0 auto;

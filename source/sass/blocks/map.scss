@@ -1,12 +1,23 @@
-.map__frame {
+.map {
+  display: block;
+  margin: 0;
   border: 0;
-  height: 100%;
+}
+
+.map__image {
+  object-fit: cover;
   width: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .map {
+    height: 400px;
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .map__frame {
-    max-width: 1440px;
+  .map {
     margin: 0 auto;
+    width: 100%;
   }
 }

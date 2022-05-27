@@ -8,6 +8,9 @@
   margin-top: 7px;
 }
 
+.slider-compare__range-toggle:focus + .slider-compare__input {
+  outline: solid 1px #bebebe;
+}
 
 .slider-compare__range-bar {
   display: flex;
@@ -124,8 +127,17 @@
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
   }
 
+  .slider-compare__range-toggle:focus + .slider-compare__input::before {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    outline: solid 1px #bababa;
+  }
+
   .slider-compare__range-toggle:active + .slider-compare__input::before {
     border-color: $color_basic_green;
+  }
+
+  .slider-compare__range-toggle:focus + .slider-compare__input {
+    outline: none;
   }
 }
 

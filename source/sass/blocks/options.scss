@@ -3,32 +3,27 @@
   border: 0;
 }
 
-.options__decore-wrapper {
-  position: relative;
-  min-height: 52px;
-  margin-top: 23px;
-  margin-bottom: 13px;
-
-  &::before {
-    position: absolute;
-    content: " ";
-    top: 30%;
-    width: 100%;
-    height: 2px;
-    background-color: $color-basic-green;
-    z-index: -1;
-  }
-}
-
 .options__title {
   font-family: $main-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   padding: 0 20px;
+  padding-left: calc((100vw - 280px) / 2);
   margin: 0;
+  margin-bottom: 39px;
   background-color: $color_white;
-  position: absolute;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $color_basic_green;
+    top: 60%;
+    width: 100vw;
+    z-index: -1;
+  }
 }
 
 .options__list {
@@ -85,28 +80,28 @@
   border-color: #bababa;
 }
 
+.options__checkbox:focus + .options__custom-checkbox {
+  border-color: #bababa;
+  outline: solid 2px #bababa;
+}
+
 .options__checkbox:disabled + .options__custom-checkbox,
 .options__checkbox:disabled ~ .options__text {
   opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
-  .options__decore-wrapper {
-    min-height: 36px;
-    margin-top: 0;
-    margin-bottom: 53px;
-
-    &::before {
-      top: 65%;
-    }
-  }
-
   .options__title {
     margin-top: 0;
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
-    margin-left: 30px;
+    margin-left: calc((100vw - 708px) / 2);
+
+    &::before {
+      width: 10000px;
+      left: -1000px;
+    }
   }
 
   .options__list {
@@ -144,7 +139,7 @@
 @media (min-width: $desktop-width) {
   .options__title {
     margin-bottom: 67px;
-    margin-left: 70px;
+    margin-left: calc(((100vw - 1220px) / 2) - 40px);
   }
 
   .options__list {
@@ -157,9 +152,5 @@
 
   .options__item {
     margin-bottom: 0;
-  }
-
-  .options__decore-wrapper {
-    margin-bottom: 64px;
   }
 }

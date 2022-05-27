@@ -59,11 +59,16 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    flex-wrap: wrap;
   }
 
   .site-navigation__item {
     width: auto;
     border: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &::after {
       display: none;
