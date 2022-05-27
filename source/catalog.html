@@ -9,7 +9,10 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="manifest" href="manifest.webmanifest">
-
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 
   <title>Каталог: Кэт энерджи</title>
 </head>
@@ -308,7 +311,8 @@
           <li class="products__item card card--showmore">
             <div class="card__container card__container--showmore">
               <a class="card__link">
-                <h3 class="card__title card__title--showmore">Показать еще<br class="card__title-br"> 100500 товаров</h3>
+                <h3 class="card__title card__title--showmore">Показать еще<br class="card__title-br"> 100500 товаров
+                </h3>
               </a>
               <p class="card__description">На самом деле вкусов гораздо больше!</p>
             </div>
@@ -320,9 +324,7 @@
     </div>
     <section class="main-catalog__addproducts addproducts">
       <!-- Дополнительные товары -->
-      <div class="addproducts__decore-wrapper">
-        <h2 class="addproducts__title">Дополнительные товары</h2>
-      </div>
+      <h2 class="addproducts__title">Дополнительные товары</h2>
       <div class="addproducts__container container">
         <ul class="addproducts__list">
           <li class="addproducts__item">
@@ -381,9 +383,17 @@
       </div>
     </section>
     <div class="main-footer__map map map--fullsize">
-      <iframe class="map__frame"
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A6cb0badf31482bce998f15db32dc193cc5cacd92af1c434716fc901f27758a92&amp;source=constructor"
-        height="362" width="320"></iframe>
+      <picture>
+        <source type="image/webp" media="(min-width:1440px)"
+          srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width:768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
+        <source media="(min-width:1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+        <source media="(min-width:768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+        <img class="map__image" src="img/map-mobile.png" width="320" height="362" srcset="img/map-mobile@2x.png 2x"
+          alt="Точка нашего офиса на карте.">
+      </picture>
     </div>
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-link" href="#">

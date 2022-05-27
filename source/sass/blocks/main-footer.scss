@@ -13,6 +13,7 @@
   align-items: center;
   min-height: 63px;
   border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
   padding: 0;
 }
 
@@ -30,9 +31,7 @@
 
 .main-footer__logo-link {
   display: block;
-  width: 100%;
   min-height: 24px;
-  border-bottom: 1px solid #d9d9d9;
   text-align: center;
 }
 
@@ -77,6 +76,7 @@
   .main-footer__logo-link {
     border: 0;
     justify-content: flex-start;
+    margin-right: 156px;
   }
 
   .main-footer__logo-image-text {

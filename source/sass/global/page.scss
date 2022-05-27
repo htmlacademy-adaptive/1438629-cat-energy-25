@@ -33,30 +33,9 @@ input::-webkit-inner-spin-button {
     width: 768px;
     margin: 0 auto;
   }
-
-  .page__main {
-    width: 768px;
-    margin: 0 auto;
-  }
-
-  .page__main-footer {
-    width: 768px;
-    margin: 0 auto;
-  }
 }
 
-
 @media (min-width: $desktop-width) {
-  .page__main-footer {
-    width: 1440px;
-    margin: 0 auto;
-  }
-
-  .page__main {
-    width: 1440px;
-    margin: 0 auto;
-  }
-
   .page__main-header {
     width: 1440px;
     margin: 0 auto;
