@@ -93,6 +93,7 @@
 @media (min-width: $tablet-width) {
   .options__title {
     margin-top: 0;
+    margin-bottom: 53px;
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
@@ -138,7 +139,7 @@
 
 @media (min-width: $desktop-width) {
   .options__title {
-    margin-bottom: 67px;
+    margin-bottom: 61px;
     margin-left: calc(((100vw - 1220px) / 2) - 40px);
   }
 

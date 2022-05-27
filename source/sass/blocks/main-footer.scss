@@ -37,7 +37,7 @@
 
 .main-footer__logo-image-text {
   display: block;
-  padding: 39px 0 32px;
+  padding: 32px 0;
   margin: 0 auto;
 
   &:hover {
@@ -64,6 +64,7 @@
   .main-footer__wrapper {
     display: flex;
     padding: 0 30px;
+    padding-top: 14px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

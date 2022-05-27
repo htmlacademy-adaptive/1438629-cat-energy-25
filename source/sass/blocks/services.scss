@@ -61,7 +61,6 @@
   position: relative;
   margin: 0;
   padding-left: 70px;
-  margin-top: 10px;
   margin-bottom: 30px;
   text-align: center;
   align-self: flex-start;
@@ -121,7 +120,8 @@
 
 @media (min-width: $tablet-width) {
   .services__list {
-    margin-bottom: 45px;
+    margin-top: 0;
+    margin-bottom: 36px;
   }
 
   .services__item {
@@ -130,7 +130,7 @@
     grid-template-columns: 340px 1fr;
     grid-template-rows: repeat(3, auto);
     column-gap: 20px;
-    padding: 66px 25px 56px 52px;
+    padding: 66px 25px 66px 52px;
     margin-bottom: 30px;
 
     &::before {
@@ -250,7 +250,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 39px;
+    margin-bottom: 34px;
   }
 
   .services__title {
