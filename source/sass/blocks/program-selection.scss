@@ -58,7 +58,7 @@
   &::after {
     position: absolute;
     left: -1000px;
-    bottom: 0;
+    bottom: -4px;
     content: "";
     height: 1px;
     width: calc(100vw + 1000px);
@@ -137,12 +137,25 @@
 }
 
 .program-selection__comments {
-  margin-bottom: 39px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
   .program-selection__questionnaire {
     margin-bottom: 72px;
+  }
+
+  .program-selection__container {
+    margin-bottom: 76px;
+  }
+
+  .program-selection__feedback {
+    margin-bottom: 47px;
+  }
+
+  .program-selection__comments {
+    margin: 0;
+    margin-bottom: 63px;
   }
 
   .program-selection__radio {
@@ -215,6 +228,7 @@
     grid-template-rows: min-content;
     column-gap: 80px;
     box-sizing: border-box;
+    margin-bottom: 0;
   }
 
   .program-selection__questionnaire {

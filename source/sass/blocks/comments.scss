@@ -12,7 +12,6 @@
   line-height: 26px;
   position: relative;
   max-width: 185px;
-  margin-top: 23px;
   margin-bottom: 37px;
   padding: 0 20px;
   padding-left: calc((100vw - 280px) / 2);
@@ -55,9 +54,10 @@
   .comments__legend {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
+    margin-bottom: 79px;
     margin-left: calc((100vw - 708px) / 2);
     padding: 0 40px;
+    padding-left: 38px;
 
     &::before {
       width: 10000px;
@@ -70,7 +70,6 @@
     line-height: 30px;
     padding: 10px 20px;
     height: 174px;
-    margin-bottom: 65px;
   }
 }
 
