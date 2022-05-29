@@ -61,6 +61,7 @@
   position: relative;
   margin: 0;
   padding-left: 70px;
+  margin-top: 11px;
   margin-bottom: 30px;
   text-align: center;
   align-self: flex-start;
@@ -130,7 +131,7 @@
     grid-template-columns: 340px 1fr;
     grid-template-rows: repeat(3, auto);
     column-gap: 20px;
-    padding: 66px 25px 66px 52px;
+    padding: 56px 25px 66px 52px;
     margin-bottom: 30px;
 
     &::before {

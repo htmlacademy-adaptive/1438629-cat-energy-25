@@ -16,8 +16,10 @@
   grid-template-columns: auto 1fr 24px;
   align-items: center;
   justify-items: center;
-  min-width: 280px;
   min-height: 65px;
+  padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .main-header__image {
@@ -41,6 +43,7 @@
   .main-header__container-logo {
     min-width: 174px;
     margin-top: 4px;
+    padding: 0;
   }
 
   .main-header__logo-img {
@@ -73,6 +76,8 @@
   .main-header__container {
     min-height: 117px;
     align-items: flex-end;
+    position: relative;
+    z-index: 3;
   }
 
   .main-header__main-nav {

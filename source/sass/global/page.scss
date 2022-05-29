@@ -13,7 +13,7 @@
 }
 
 .page__main-header {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -26,6 +26,7 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
 /* stylelint-enable */
 
 @media (min-width: $tablet-width) {
@@ -37,19 +38,23 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: $desktop-width) {
   .page__main-header {
-    width: 1440px;
+    width: auto;
     margin: 0 auto;
     margin-bottom: 25px;
     position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: linear-gradient(to left,#63a63b 0,#63a63b 0 720px,#ffffff 0);
-      top: 0;
-      height: 669px;
-      width: 1440px;
-      z-index: -3;
+    &--index {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(to left, #63a63b 0, #63a63b 0 50%, #ffffff 0);
+        top: 0;
+        height: 500px;
+        width: 100%;
+        z-index: -3;
+      }
     }
   }
 }
