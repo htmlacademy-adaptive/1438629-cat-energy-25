@@ -67,13 +67,18 @@
   }
 
   .main-header__container-logo {
-    padding-top: 52px;
     margin: 0;
+  }
+
+  .main-header__container {
+    min-height: 117px;
+    align-items: flex-end;
   }
 
   .main-header__main-nav {
     margin-top: 0;
+    max-width: 480px;
+    min-width: 480px;
     margin-left: 513px;
-    padding-top: 52px;
   }
 }
