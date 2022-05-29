@@ -11,27 +11,10 @@
   width: 100%;
   text-align: center;
   position: relative;
+  border-bottom: 1px solid #e6e6e6;
 
-  &:first-child::before {
-    position: absolute;
-    top: -2px;
-    right: 0;
-    left: 0;
-    content: "";
-    height: 1px;
-    width: 320px;
-    background-color: rgba(230, 230, 230, 1);
-  }
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    content: "";
-    height: 1px;
-    width: 320px;
-    background-color: rgba(230, 230, 230, 1);
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
   }
 }
 
@@ -66,6 +49,10 @@
     width: auto;
     border: 0;
 
+    &:first-child {
+      border-top: 0;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -97,6 +84,10 @@
 @media (min-width: $desktop-width) {
   .site-navigation {
     min-width: 478px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    margin-bottom: 8px;
   }
 
   .site-navigation__item::after {
